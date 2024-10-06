@@ -98,8 +98,7 @@ Lies zwei (durch Leerzeichen getrennte) Zahlen ein und gib ihre Summe aus
 
 Beispieldialog:
 
-Bitte die erste Zahl eingeben: 5
-Bitte die zweite Zahl eingeben: 3
+Bitte zwei Zahlen eingeben: 3 5
 Die Summe ist 8
 ''' 
 # your code
