@@ -6,3 +6,5 @@ root: intro
 chapters:
   - file: beispielaufgabe
   - file: aufgaben1
+  - file: aufgaben2
+  - file: aufgaben3
