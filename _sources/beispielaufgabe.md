@@ -5,22 +5,18 @@ von Beispieldialogen.
 
 ```
 '''
-Aufgabe 8:
-Lies einen String s ein.
-Gib die Anzahl der Zeichen aus, bei denen das nachfolgende Zeichen das Gleiche ist.
- 
+Aufgabe 1.12:
+Lies eine ganze Zahl ein und gib aus, ob sie gerade oder ungerade ist
+
 Beispieldialoge:
 
-Bitte einen String eingeben: abcdefg
-0
+Bitte eine ganze Zahl eingeben: 3
+ungerade
 
-Bitte einen String eingeben: aaabb
-3
-
-Bitte einen String eingeben: abbadff
-2
-'''
-# your code
+Bitte eine ganze Zahl eingeben: 8
+gerade
+''' 
+# your code 
 
 ```
 Über das `copy`-Icon in der rechten oberen Ecke der Zelle kann die Aufgabenstellung in den eigenen Programmeditor kopiert werden. Die Kommentarzeile `#your code` wird durch den eigenen Programmcode ersetzt. Der Leser kontrolliert selbst
@@ -28,26 +24,21 @@ die Korrektheit des Programms. Eine Lösung für die obige Aufgabe könnte sein:
 
 ```
 '''
-Aufgabe 8:
-Lies einen String s ein.
-Gib die Anzahl der Zeichen aus, bei denen das nachfolgende Zeichen das Gleiche ist.
- 
+Aufgabe 1.12:
+Lies eine ganze Zahl ein und gib aus, ob sie gerade oder ungerade ist
+
 Beispieldialoge:
 
-Bitte einen String eingeben: abcdefg
-0
+Bitte eine ganze Zahl eingeben: 3
+ungerade
 
-Bitte einen String eingeben: aaabb
-3
-
-Bitte einen String eingeben: abbadff
-2
-'''
-s = input('Bitte einen String eingeben: ')
-zaehl = 0
-for i in range(len(s)-1):
-    if s[i] == s[i+1]:
-        zaehl+=1
-print(zaehl)
+Bitte eine ganze Zahl eingeben: 8
+gerade
+''' 
+x = int(input('Bitte eine ganze Zahl eingeben:'))
+if x % 2 == 0:
+    print('gerade')
+else:
+    print('ungerade')
 ```
  
