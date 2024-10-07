@@ -3,6 +3,7 @@
 
 
 <!-- #1 #zuweisung   -->
+
 ```
 ''' 
 Aufgabe 1.1:
