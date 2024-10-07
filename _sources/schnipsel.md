@@ -38,6 +38,16 @@ print(a, b)              # zwei Werte ausgeben mit Leerzeichen getrennt
 print(a, end=' ')        # nach der Ausgabe keine neue Zeile, sondern ein Leerzeichen 
 ``` 
 
+```
+# Ausgabe mit f-Strings
+a = 42
+print(f'Der Wert von a ist {a}.')
+print(f'{a} zum Quadrat ist {a**2}.')
+
+
+
+```
+
 ## Eingabe
 ```
 s = input('Bitte einen String eingeben')                
@@ -66,6 +76,14 @@ if a % b == 0:       # ist b ein Teiler von a?
     ...
 ```
 
+## Arithmetische Operatoren
+```
++ - * /      # plus, minus, mal, geteilt
+//           # ganzzahlige Division
+%            # Modulo (Rest bei der ganzzahligen Division)
+**           # Exponentiation
+```
+
 ## Boolesche Operatoren
 ```
 # Boolesche Operatoren
@@ -73,6 +91,16 @@ a and b      # True wenn a und b True sind
 a or  b      # True wenn mindestens einer von beiden True ist
 not a        # dreht den Wahrheitswert um
 ```
+
+## Eingebaute Funktionen
+```
+min(a), max(a), sum(a)    # Minimum, Maximum, Summe einer Liste a mit Zahlen
+x = round(5.76543, 2)     # Auf 2 Stellen hinterm Komma runden
+abs(x)                    # Betrag einer Zahl x
+ord(c)                    # ASCII bzw. Unicode-Codepoint eines Zeichens c
+chr(x)                    # Zeichen einer ASCII-Zahl x oder Unicode-Codepoints
+```
+
 
 ## Schleifen  
 
@@ -89,11 +117,7 @@ for i in range(5,-1,-1):  # 5,4,3,2,1,0
 
 ```
  
-```
-# while-Schleife
-while a < 10:             # solange a kleiner 10 ...
-    ....
-```
+
 
 ```
 # Schleifen mit Strings
@@ -105,7 +129,6 @@ s = 'Habicht'
 for c in s:                         # durch die Zeichen eines Strings laufen
     print(c)
 ```
-
 ```
 # Schleifen mit Listen
 a = [4,2,10,6]
@@ -115,10 +138,23 @@ for i in range(len(a)):             # durch die Elemente der Liste mit dem Index
 for x in a:                         # durch die Elemente der Liste laufen
     print(x)
 ```
+```
+# while-Schleife
+while x < 10:             # solange x kleiner 10 ...
+    ....
+ 
+while s:                  # solange String s nicht leer ist ...
+    ....
+
+while a:                  # solange in der Liste a noch Elemente sind ...
+    ....
+```
+
 
 ## Strings
 
 ```
+s = ''                # Der leere String mit Länge 0
 s1 = 'oha'
 s2 = 'du'
 s = s1 + ' ' + s2     # Verketten von Strings 

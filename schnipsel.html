@@ -388,7 +388,9 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ausgabe">Ausgabe</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eingabe">Eingabe</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bedingungen">Bedingungen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#arithmetische-operatoren">Arithmetische Operatoren</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#boolesche-operatoren">Boolesche Operatoren</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eingebaute-funktionen">Eingebaute Funktionen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#schleifen">Schleifen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strings">Strings</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#listen">Listen</a></li>
@@ -445,6 +447,15 @@ document.write(`
 <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>        <span class="c1"># nach der Ausgabe keine neue Zeile, sondern ein Leerzeichen </span>
 </pre></div>
 </div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Ausgabe mit f-Strings</span>
+<span class="n">a</span> <span class="o">=</span> <span class="mi">42</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Der Wert von a ist </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s1">.&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s1"> zum Quadrat ist </span><span class="si">{</span><span class="n">a</span><span class="o">**</span><span class="mi">2</span><span class="si">}</span><span class="s1">.&#39;</span><span class="p">)</span>
+
+
+
+</pre></div>
+</div>
 </section>
 <section id="eingabe">
 <h2>Eingabe<a class="headerlink" href="#eingabe" title="Link to this heading">#</a></h2>
@@ -476,12 +487,31 @@ document.write(`
 </pre></div>
 </div>
 </section>
+<section id="arithmetische-operatoren">
+<h2>Arithmetische Operatoren<a class="headerlink" href="#arithmetische-operatoren" title="Link to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">+</span> <span class="o">-</span> <span class="o">*</span> <span class="o">/</span>      <span class="c1"># plus, minus, mal, geteilt</span>
+<span class="o">//</span>           <span class="c1"># ganzzahlige Division</span>
+<span class="o">%</span>            <span class="c1"># Modulo (Rest bei der ganzzahligen Division)</span>
+<span class="o">**</span>           <span class="c1"># Exponentiation</span>
+</pre></div>
+</div>
+</section>
 <section id="boolesche-operatoren">
 <h2>Boolesche Operatoren<a class="headerlink" href="#boolesche-operatoren" title="Link to this heading">#</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Boolesche Operatoren</span>
 <span class="n">a</span> <span class="ow">and</span> <span class="n">b</span>      <span class="c1"># True wenn a und b True sind</span>
 <span class="n">a</span> <span class="ow">or</span>  <span class="n">b</span>      <span class="c1"># True wenn mindestens einer von beiden True ist</span>
 <span class="ow">not</span> <span class="n">a</span>        <span class="c1"># dreht den Wahrheitswert um</span>
+</pre></div>
+</div>
+</section>
+<section id="eingebaute-funktionen">
+<h2>Eingebaute Funktionen<a class="headerlink" href="#eingebaute-funktionen" title="Link to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">min</span><span class="p">(</span><span class="n">a</span><span class="p">),</span> <span class="nb">max</span><span class="p">(</span><span class="n">a</span><span class="p">),</span> <span class="nb">sum</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>    <span class="c1"># Minimum, Maximum, Summe einer Liste a mit Zahlen</span>
+<span class="n">x</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="mf">5.76543</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>     <span class="c1"># Auf 2 Stellen hinterm Komma runden</span>
+<span class="nb">abs</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>                    <span class="c1"># Betrag einer Zahl x</span>
+<span class="nb">ord</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>                    <span class="c1"># ASCII bzw. Unicode-Codepoint eines Zeichens c</span>
+<span class="nb">chr</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>                    <span class="c1"># Zeichen einer ASCII-Zahl x oder Unicode-Codepoints</span>
 </pre></div>
 </div>
 </section>
@@ -497,11 +527,6 @@ document.write(`
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>  <span class="c1"># 5,4,3,2,1,0</span>
     <span class="o">...</span>
 
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># while-Schleife</span>
-<span class="k">while</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>             <span class="c1"># solange a kleiner 10 ...</span>
-    <span class="o">....</span>
 </pre></div>
 </div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Schleifen mit Strings</span>
@@ -523,10 +548,22 @@ document.write(`
     <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
 </div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># while-Schleife</span>
+<span class="k">while</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>             <span class="c1"># solange x kleiner 10 ...</span>
+    <span class="o">....</span>
+ 
+<span class="k">while</span> <span class="n">s</span><span class="p">:</span>                  <span class="c1"># solange String s nicht leer ist ...</span>
+    <span class="o">....</span>
+
+<span class="k">while</span> <span class="n">a</span><span class="p">:</span>                  <span class="c1"># solange in der Liste a noch Elemente sind ...</span>
+    <span class="o">....</span>
+</pre></div>
+</div>
 </section>
 <section id="strings">
 <h2>Strings<a class="headerlink" href="#strings" title="Link to this heading">#</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">s1</span> <span class="o">=</span> <span class="s1">&#39;oha&#39;</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>                <span class="c1"># Der leere String mit Länge 0</span>
+<span class="n">s1</span> <span class="o">=</span> <span class="s1">&#39;oha&#39;</span>
 <span class="n">s2</span> <span class="o">=</span> <span class="s1">&#39;du&#39;</span>
 <span class="n">s</span> <span class="o">=</span> <span class="n">s1</span> <span class="o">+</span> <span class="s1">&#39; &#39;</span> <span class="o">+</span> <span class="n">s2</span>     <span class="c1"># Verketten von Strings </span>
 
@@ -689,7 +726,9 @@ auf mehrere Zeilen verteilen.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ausgabe">Ausgabe</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eingabe">Eingabe</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bedingungen">Bedingungen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#arithmetische-operatoren">Arithmetische Operatoren</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#boolesche-operatoren">Boolesche Operatoren</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eingebaute-funktionen">Eingebaute Funktionen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#schleifen">Schleifen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strings">Strings</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#listen">Listen</a></li>
