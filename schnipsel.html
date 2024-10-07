@@ -394,6 +394,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#listen">Listen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dictionaries">Dictionaries</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funktionen">Funktionen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#einlesen-von-dateien">Einlesen von Dateien</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fortsetzungszeichen">Fortsetzungszeichen</a></li>
 </ul>
             </nav>
@@ -503,6 +504,25 @@ document.write(`
     <span class="o">....</span>
 </pre></div>
 </div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Schleifen mit Strings</span>
+<span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;Habicht&#39;</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)):</span>             <span class="c1"># durch die Zeichen eines Strings mit dem Index laufen.</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+
+<span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;Habicht&#39;</span>
+<span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>                         <span class="c1"># durch die Zeichen eines Strings laufen</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Schleifen mit Listen</span>
+<span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)):</span>             <span class="c1"># durch die Elemente der Liste mit dem Index laufen.</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">a</span><span class="p">:</span>                         <span class="c1"># durch die Elemente der Liste laufen</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+</pre></div>
+</div>
 </section>
 <section id="strings">
 <h2>Strings<a class="headerlink" href="#strings" title="Link to this heading">#</a></h2>
@@ -526,17 +546,6 @@ document.write(`
 <span class="n">s</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span>       <span class="c1"># &#39;bic&#39;</span>
 <span class="n">s</span><span class="p">[::</span><span class="mi">2</span><span class="p">]</span>       <span class="c1"># jedes zweite Zeichen: &#39;Hbct&#39;</span>
 <span class="n">s</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>      <span class="c1"># den gesamten String rückwärts:  &#39;thcibaH&#39;</span>
-
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Schleifen mit Strings</span>
-<span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;Habicht&#39;</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)):</span>             <span class="c1"># durch die Zeichen eines Strings mit dem Index laufen.</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">s</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
-
-<span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;Habicht&#39;</span>
-<span class="k">for</span> <span class="n">c</span> <span class="ow">in</span> <span class="n">s</span><span class="p">:</span>                         <span class="c1"># durch die Zeichen eines Strings laufen</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
 
 </pre></div>
 </div>
@@ -569,6 +578,26 @@ document.write(`
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
 
+</pre></div>
+</div>
+</section>
+<section id="einlesen-von-dateien">
+<h2>Einlesen von Dateien<a class="headerlink" href="#einlesen-von-dateien" title="Link to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;input.txt&#39;</span><span class="p">)</span>
+<span class="n">zeile</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>   <span class="c1"># eine Zeile als String einlesen</span>
+<span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">())</span>          <span class="c1"># eine Zahl einlesen</span>
+<span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;input.txt&#39;</span><span class="p">)</span>
+<span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span><span class="o">.</span><span class="n">split</span><span class="p">()]</span>   <span class="c1"># eine Zeile mit Zahlen in eine Liste einlesen</span>
+<span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;input.txt&#39;</span><span class="p">)</span>
+<span class="n">text</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>                <span class="c1"># den gesamten Text mit Zeilenvorschüben einlesen</span>
+<span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+<span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">,</span><span class="s1">&#39; &#39;</span><span class="p">)</span>  <span class="c1"># Zeilenvorschub durch Leerzeichen ersetzen</span>
 </pre></div>
 </div>
 </section>
@@ -666,6 +695,7 @@ auf mehrere Zeilen verteilen.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#listen">Listen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dictionaries">Dictionaries</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funktionen">Funktionen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#einlesen-von-dateien">Einlesen von Dateien</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fortsetzungszeichen">Fortsetzungszeichen</a></li>
 </ul>
   </nav></div>
