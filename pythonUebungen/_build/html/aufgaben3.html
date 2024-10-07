@@ -1,0 +1,910 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Aufgaben 3 &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'aufgaben3';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Aufgaben 2" href="aufgaben2.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.png" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Python Übungen
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="beispielaufgabe.html">Beispielaufgabe</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aufgaben1.html">Aufgaben 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aufgaben2.html">Aufgaben 2</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Aufgaben 3</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Faufgaben3.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/aufgaben3.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Aufgaben 3</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="aufgaben-3">
+<h1>Aufgaben 3<a class="headerlink" href="#aufgaben-3" title="Link to this heading">#</a></h1>
+<!-- #1 #str  -->
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">Aufgabe 3.1</span>
+<span class="sd">Setze s1 auf &#39;Rom&#39;</span>
+<span class="sd">Setze s2 auf &#39;Paris&#39;</span>
+<span class="sd">Setze a auf das 5-mal hintereinandergepappte s1</span>
+<span class="sd">Setze b auf das 3-mal hintereinandergepappte s2</span>
+<span class="sd">Pappe a dann b dann a zusammen und weise das Ergebnis der Variablen c zu</span>
+<span class="sd">Gib c aus</span>
+
+<span class="sd">Erwartete Ausgabe:</span>
+<span class="sd">RomRomRomRomRomParisParisParisRomRomRomRomRom</span>
+
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="c1"># your code</span>
+</pre></div>
+</div>
+<!-- #1 #modulo   -->
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">Aufgabe 3.2:</span>
+<span class="sd">Lies eine Zahl x ein</span>
+<span class="sd">Falls x durch 2 teilbar: Gib aus &#39;2 ist Teiler&#39;</span>
+<span class="sd">Falls x durch 3 teilbar: Gib aus &#39;3 ist Teiler&#39;</span>
+<span class="sd">Falls x durch 5 teilbar: Gib aus &#39;5 ist Teiler&#39;</span>
+<span class="sd">Falls x durch 7 teilbar: Gib aus &#39;7 ist Teiler&#39;</span>
+<span class="sd">Falls x durch 11 teilbar: Gib aus &#39;11 ist Teiler&#39;</span>
+
+<span class="sd">Beispieldialog:</span>
+
+<span class="sd">Bitte eine Zahl eingeben: 3432</span>
+<span class="sd">2 ist Teiler</span>
+<span class="sd">3 ist Teiler</span>
+<span class="sd">11 ist Teiler</span>
+
+<span class="sd">Bitte eine Zahl eingeben: 480480</span>
+<span class="sd">2 ist Teiler</span>
+<span class="sd">3 ist Teiler</span>
+<span class="sd">5 ist Teiler</span>
+<span class="sd">7 ist Teiler</span>
+<span class="sd">11 ist Teiler</span>
+<span class="sd">&#39;&#39;&#39;</span> 
+
+<span class="c1"># your code</span>
+</pre></div>
+</div>
+<!-- #1 #modulo #schleife -->
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">Aufgabe 3.3</span>
+<span class="sd">Das Programm liest eine Zahl ein und gibt </span>
+<span class="sd">dann die Teiler zurück. Beispieldialoge:</span>
+<span class="sd"> </span>
+<span class="sd">Bitte eine Zahl eingeben: 12</span>
+<span class="sd">1 ist Teiler von 12</span>
+<span class="sd">2 ist Teiler von 12</span>
+<span class="sd">3 ist Teiler von 12</span>
+<span class="sd">4 ist Teiler von 12</span>
+<span class="sd">6 ist Teiler von 12</span>
+<span class="sd">12 ist Teiler von 12</span>
+
+<span class="sd">Bitte eine Zahl eingeben: 23</span>
+<span class="sd">1 ist Teiler von 23</span>
+<span class="sd">23 ist Teiler von 23</span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="c1"># your code  </span>
+</pre></div>
+</div>
+<!-- #2 #str #schleife  -->
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">Aufgabe 3.4</span>
+<span class="sd">Lies eine ganze Zahl k &gt; 2 ein.</span>
+<span class="sd">Gib ein k x k Quadrat mit &#39;#&#39;-Rändern aus.</span>
+
+<span class="sd">Beispieldialoge:</span>
+
+<span class="sd">Bitte eine ganze Zahl größer als 2 eingeben: 3</span>
+<span class="sd">###</span>
+<span class="sd"># #</span>
+<span class="sd">###</span>
+
+<span class="sd">Bitte eine Zahl eingeben: 5</span>
+<span class="sd">#####</span>
+<span class="sd">#   #</span>
+<span class="sd">#   #</span>
+<span class="sd">#   #</span>
+<span class="sd">#####</span>
+
+<span class="sd">Bitte eine ganze Zahl größer als 2 eingeben: 6</span>
+<span class="sd">######</span>
+<span class="sd">#    #</span>
+<span class="sd">#    #</span>
+<span class="sd">#    #</span>
+<span class="sd">#    #</span>
+<span class="sd">######</span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="c1"># your code</span>
+</pre></div>
+</div>
+<!-- #2 #range   -->
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">Aufgabe 3.5</span>
+<span class="sd">Lies in einer Zeile zwei ganze Zahlen a, b ein und ermittle die Summe aller</span>
+<span class="sd">Zahlen k zwischen a und b, also a &lt;= k &lt;= b. Beispieldialoge:</span>
+
+<span class="sd">Bitte zwei ganze Zahlen a, b eingeben mit a &lt;= b: 0 3</span>
+<span class="sd">Die Summe aller ganzen Zahlen zwischen 0 und 3 ist 6</span>
+
+<span class="sd">Bitte zwei ganze Zahlen a, b eingeben mit a &lt;= b: 1 100</span>
+<span class="sd">Die Summe aller ganzen Zahlen zwischen 1 und 100 ist 5050</span>
+
+<span class="sd">Bitte zwei ganze Zahlen a, b eingeben mit a &lt;= b: -5 5</span>
+<span class="sd">Die Summe aller ganzen Zahlen zwischen -5 und 5 ist 0</span>
+
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="c1"># your code</span>
+</pre></div>
+</div>
+<!-- #2 #range  -->
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39; </span>
+<span class="sd">Aufgabe 3.6</span>
+<span class="sd">Lies eine ganze Zahl k &gt; 0 ein und gib die </span>
+<span class="sd">Multiplikationstabelle aus. Beispieldialoge:</span>
+
+<span class="sd">Bitte eine positive ganze Zahl eingeben: 17</span>
+<span class="sd">1 mal 17 ist 17</span>
+<span class="sd">2 mal 17 ist 34</span>
+<span class="sd">3 mal 17 ist 51</span>
+<span class="sd">4 mal 17 ist 68</span>
+<span class="sd">5 mal 17 ist 85</span>
+<span class="sd">6 mal 17 ist 102</span>
+<span class="sd">7 mal 17 ist 119</span>
+<span class="sd">8 mal 17 ist 136</span>
+<span class="sd">9 mal 17 ist 153</span>
+<span class="sd">10 mal 17 ist 170</span>
+
+<span class="sd">Bitte eine positive ganze Zahl eingeben: 23</span>
+<span class="sd">1 mal 23 ist 23</span>
+<span class="sd">2 mal 23 ist 46</span>
+<span class="sd">3 mal 23 ist 69</span>
+<span class="sd">4 mal 23 ist 92</span>
+<span class="sd">5 mal 23 ist 115</span>
+<span class="sd">6 mal 23 ist 138</span>
+<span class="sd">7 mal 23 ist 161</span>
+<span class="sd">8 mal 23 ist 184</span>
+<span class="sd">9 mal 23 ist 207</span>
+<span class="sd">10 mal 23 ist 230</span>
+<span class="sd">&#39;&#39;&#39;</span> 
+<span class="c1"># your code</span>
+</pre></div>
+</div>
+<!-- #1 #str #count  -->
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">Aufgabe 3.7:</span>
+<span class="sd">Lies einen String s ein. Dann lies ein einzelnes Zeichen c ein. </span>
+<span class="sd">Gib aus, wieviel mal das Zeichen c im String s vorkommt.</span>
+<span class="sd"> </span>
+<span class="sd">Beispieldialoge:</span>
+
+<span class="sd">Bitte einen String eingeben: Hallo</span>
+<span class="sd">Bitte ein Zeichen eingeben: a</span>
+<span class="sd">1</span>
+
+<span class="sd">Bitte einen String eingeben: Tralala</span>
+<span class="sd">Bitte ein Zeichen eingeben: a</span>
+<span class="sd">3</span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="c1"># your code</span>
+</pre></div>
+</div>
+<!-- #1 #str   -->
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">Aufgabe 3.8:</span>
+<span class="sd">Lies einen String s ein.</span>
+<span class="sd">Gib die Anzahl der Zeichen aus, bei denen das nachfolgende Zeichen das Gleiche ist.</span>
+<span class="sd"> </span>
+<span class="sd">Beispieldialoge:</span>
+
+<span class="sd">Bitte einen String eingeben: abcdefg</span>
+<span class="sd">0</span>
+
+<span class="sd">Bitte einen String eingeben: aaabb</span>
+<span class="sd">3</span>
+
+<span class="sd">Bitte einen String eingeben: abbadff</span>
+<span class="sd">2</span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="c1"># your code</span>
+</pre></div>
+</div>
+<!-- #1 #str   -->
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">Aufgabe 3.9:</span>
+<span class="sd">Lies eine String s ein. </span>
+<span class="sd">Gib nacheinander Zeichen mit ihren Nachfolgern aus (Teilstrings der Länge 2)</span>
+
+<span class="sd">Beispieldialoge:</span>
+
+<span class="sd">Bitte einen String eingeben: Habicht</span>
+<span class="sd">Ha ab bi ic ch ht </span>
+
+<span class="sd">Bitte einen String eingeben: Informatik</span>
+<span class="sd">In nf fo or rm ma at ti ik </span>
+
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="c1"># your code </span>
+</pre></div>
+</div>
+<!-- #1 #str   -->
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">Aufgabe 3.10:</span>
+<span class="sd">Lies eine String s ein. </span>
+<span class="sd">Gib nacheinander die vorne beginnenden Teilstrings aus.</span>
+
+<span class="sd">Beispieldialoge:</span>
+
+<span class="sd">Bitte einen String eingeben: Habicht</span>
+<span class="sd">H</span>
+<span class="sd">Ha</span>
+<span class="sd">Hab</span>
+<span class="sd">Habi</span>
+<span class="sd">Habic</span>
+<span class="sd">Habich</span>
+<span class="sd">Habicht</span>
+
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="c1"># your code </span>
+</pre></div>
+</div>
+<!-- #1 #str   -->
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">Aufgabe 3.11:</span>
+<span class="sd">Lies eine String s ein. </span>
+<span class="sd">Gib nacheinander die hinten endenden Teilstrings aus.</span>
+
+<span class="sd">Beispieldialoge:</span>
+
+<span class="sd">Bitte einen String eingeben: Habicht</span>
+<span class="sd">Habicht</span>
+<span class="sd">abicht</span>
+<span class="sd">bicht</span>
+<span class="sd">icht</span>
+<span class="sd">cht</span>
+<span class="sd">ht</span>
+<span class="sd">t</span>
+
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="c1"># your code </span>
+</pre></div>
+</div>
+<!-- #1 #str #contains  -->
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">Aufgabe 3.12:</span>
+<span class="sd">Lies eine String s ein und einen weiteren String s0 ein. </span>
+<span class="sd">Wenn s0 in s vorkommt, gib &#39;YES&#39; aus, ansonsten &#39;NO&#39;.</span>
+
+<span class="sd">Nutze eine for-Schleife und slicing, keine eingebauten Funktionen.</span>
+
+<span class="sd">Beispieldialoge:</span>
+
+<span class="sd">Bitte einen String eingeben: Habicht</span>
+<span class="sd">Bitte einen weiteren String eingeben: ich</span>
+<span class="sd">YES</span>
+
+<span class="sd">Bitte einen String eingeben: Hallo</span>
+<span class="sd">Bitte einen weiteren String eingeben: lol</span>
+<span class="sd">NO</span>
+
+<span class="sd">Bitte einen String eingeben: Hallo</span>
+<span class="sd">Bitte einen weiteren String eingeben: llo</span>
+<span class="sd">YES</span>
+
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="c1"># your code</span>
+</pre></div>
+</div>
+<!-- #1 #str   -->
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">Aufgabe 3.13:</span>
+<span class="sd">Lies eine Folge von mindestend 2 Zahlen ein.</span>
+<span class="sd">Erzeuge dann eine Liste mit den Summen zweier aufeinanderfolgender Zahlen.</span>
+<span class="sd">Wenn die Liste weniger als 2 Elemente enthält, gib aus: &#39;zu kurz&#39;</span>
+
+<span class="sd">Beispieldialoge:</span>
+
+<span class="sd">Bitte eine Folge von Zahlen eingeben: 1 2 3</span>
+<span class="sd">[3, 5]</span>
+
+<span class="sd">Bitte eine Folge von Zahlen eingeben: 3 3 3 4 4 4 </span>
+<span class="sd">[6, 6, 7, 8, 8]</span>
+
+<span class="sd">Bitte eine Folge von Zahlen eingeben: 7</span>
+<span class="sd">zu kurz</span>
+
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="c1"># your code</span>
+</pre></div>
+</div>
+<!-- #1 #list #slice   -->
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">Aufgabe 3.14:</span>
+<span class="sd">Lies eine Folge von Zahlen ein</span>
+<span class="sd">Gib alle Teillisten aus, die mit 3 beginnen und bis zum Ende gehen.</span>
+
+<span class="sd">Beispieldialoge:</span>
+
+<span class="sd">Bitte eine Folge von Zahlen eingeben: 3 4 5 3 1 2 3 3 </span>
+<span class="sd">[3, 4, 5, 3, 1, 2, 3, 3]</span>
+<span class="sd">[3, 1, 2, 3, 3]</span>
+<span class="sd">[3, 3]</span>
+<span class="sd">[3]</span>
+
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="c1"># your code</span>
+</pre></div>
+</div>
+<!-- #1 #str #list #split  -->
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">Aufgabe 3.15:</span>
+<span class="sd">Lies einen String s ein</span>
+<span class="sd">Lies ein Trennzeichen c ein.</span>
+<span class="sd">Gib die Liste a aus, die die Bestandteile von s enthält, wenn man c als Trennzeichen nutzt</span>
+
+<span class="sd">Beispieldialoge:</span>
+
+<span class="sd">Bitte einen String eingeben: Habicht</span>
+<span class="sd">Bitte ein Trennzeichen eingeben: c</span>
+<span class="sd">[&#39;Habi&#39;, &#39;ht&#39;]</span>
+
+<span class="sd">Bitte einen String eingeben: hola-hula-hup</span>
+<span class="sd">Bitte ein Trennzeichen eingeben: -</span>
+<span class="sd">[&#39;hola&#39;, &#39;hula&#39;, &#39;hup&#39;]</span>
+
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="c1">#your code</span>
+</pre></div>
+</div>
+<!-- #1 #str #replace   -->
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">Aufgabe 3.16:</span>
+<span class="sd">Lies einen Satz mit mehreren Worten ein, die durch Leerzeichen getrennt sind</span>
+<span class="sd">Gib den Satz aus mit einem &#39;+&#39; zwischen den Worten.</span>
+
+<span class="sd">Beispieldialoge:</span>
+
+<span class="sd">Bitte einen Satz eingeben: Heute ist ein schöner Tag</span>
+<span class="sd">Heute+ist+ein+schöner+Tag</span>
+
+<span class="sd">Bitte einen Satz eingeben: Da ist nicht viel.</span>
+<span class="sd">Da+ist+nicht+viel.</span>
+
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="c1">#your code</span>
+</pre></div>
+</div>
+<!-- #1 #str #replace  -->
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">Aufgabe 3.17:</span>
+<span class="sd">Lies einen Satz mit mehreren Worten ein, die durch Leerzeichen getrennt sind</span>
+<span class="sd">Gib den Satz ohne Leerzeichen aus. </span>
+
+<span class="sd">Beispieldialoge:</span>
+
+<span class="sd">Bitte einen Satz eingeben: Heute ist ein schöner Tag</span>
+<span class="sd">HeuteisteinschönerTag</span>
+
+<span class="sd">Bitte einen Satz eingeben: Da ist nicht viel.</span>
+<span class="sd">Daistnichtviel.</span>
+
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="c1">#your code</span>
+</pre></div>
+</div>
+<!-- #1 #str #list  -->
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">Aufgabe 3.18:</span>
+<span class="sd">Gib in einer Zeile ein ganze Zahl ein.</span>
+<span class="sd">Gib die Liste mit den Ziffern aus.</span>
+
+<span class="sd">Beispieldialoge:</span>
+
+<span class="sd">Bitte eine Zahl eingeben: 123456789</span>
+<span class="sd">[1, 2, 3, 4, 5, 6, 7, 8, 9]</span>
+
+<span class="sd">Bitte eine Zahl eingeben: 2313450023</span>
+<span class="sd">[2, 3, 1, 3, 4, 5, 0, 0, 2, 3]</span>
+
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="c1">#your code</span>
+</pre></div>
+</div>
+<!-- #2 #str #list  -->
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">Aufgabe 19:</span>
+<span class="sd">Gib in einer Zeile eine positive ganze Zahl ein.</span>
+<span class="sd">Gib die Quersumme der Zahl aus.</span>
+
+<span class="sd">Beispieldialoge:</span>
+
+<span class="sd">Bitte eine Zahl eingeben: 124</span>
+<span class="sd">7</span>
+
+<span class="sd">Bitte eine Zahl eingeben: 1234567</span>
+<span class="sd">28</span>
+
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="c1">#your code</span>
+</pre></div>
+</div>
+<!-- #2 #str #schleife  -->
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">Aufgabe 3.20:</span>
+<span class="sd">Lies positive ganze Zahl n ein.</span>
+<span class="sd">Gib die Summe aller ihrer geraden Ziffern aus.</span>
+<span class="sd">Nutze eine for-Schleife ohne Index.</span>
+
+<span class="sd">Beispieldialoge:</span>
+
+<span class="sd">Bitte eine Zahl eingeben: 243</span>
+<span class="sd">6</span>
+
+<span class="sd">Bitte eine Zahl eingeben: 135775</span>
+<span class="sd">0</span>
+
+<span class="sd">Bitte eine Zahl eingeben: 12345678</span>
+<span class="sd">20</span>
+<span class="sd">&#39;&#39;&#39;</span>
+<span class="c1">#your code</span>
+</pre></div>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="aufgaben2.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Aufgaben 2</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
