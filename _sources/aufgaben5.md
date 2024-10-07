@@ -92,7 +92,7 @@ Erwartete Ausgabe:
 -12
 10
 ```
-
+---
 <!-- #2 #einlesen -->
 
 ```
@@ -114,6 +114,7 @@ Erwartete Ausgabe:
 40
 ```
 ---- 
+<!-- #2 #einlesen -->
 
 ```
 '''
@@ -135,7 +136,6 @@ Hallo
 ```
 
 ---
-
 <!-- #2 #einlesen -->
 
 ```
@@ -154,7 +154,6 @@ Erwartete Ausgabe:
 3 10 8 4 -3 14 42 -9
 ```
 ----
-
 <!-- #2 #einlesen -->
 
 ```
@@ -186,7 +185,7 @@ wir bereits: Töne, Bilder und beliebige andere Informationen lassen sich durch
 ```
 '''
 Aufgabe 5.10
-Lies den Text aus input.txt in eine Variable data ein.
+Lies den Text aus dem letzten input.txt in eine Variable data ein.
 Übernimm nur die Vokale aus dem Text gib den String, der nur aus diesen Vokalen besteht aus.
 
 Erwartete Ausgabe:
@@ -195,11 +194,5 @@ IeIeeeoueeeueuEieeoeeeeueeieaieeieeiEiueeueieieeieieueieieaeeIoaioeaeiuueoiee
 # your code
 ```
 
-```
-%%writefile input.txt
-In der Innenwelt des Computers werden Nullen und Einsen verschoben, verrechnet
-und gespeichert. Dass dies keinerlei Einschränkung bedeutet, wissen
-wir bereits: Töne, Bilder und beliebige andere Informationen lassen sich durch
-0–1-Muster codieren.
-```
+
 
