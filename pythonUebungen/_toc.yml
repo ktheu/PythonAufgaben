@@ -5,7 +5,9 @@ format: jb-book
 root: intro
 chapters:
   - file: beispielaufgabe
+  - file: schnipsel
   - file: aufgaben1
   - file: aufgaben2
   - file: aufgaben3
   - file: aufgaben4
+  - file: aufgaben5
