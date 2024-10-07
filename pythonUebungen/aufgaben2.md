@@ -154,6 +154,7 @@ Aufgabe 2.9:
 Erwartete Ausgabe:
 [5, 9, 33, 14, 5, 26]
 '''
+a = [5, 9, 2, 14, 5, 26]
 # your code
 ```
 
