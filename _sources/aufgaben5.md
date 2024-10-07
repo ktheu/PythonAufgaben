@@ -186,7 +186,8 @@ wir bereits: Töne, Bilder und beliebige andere Informationen lassen sich durch
 '''
 Aufgabe 5.10
 Lies den Text aus dem letzten input.txt in eine Variable data ein.
-Übernimm nur die Vokale aus dem Text gib den String, der nur aus diesen Vokalen besteht aus.
+Übernimm nur die Vokale aus dem Text und und gib den String, der nur aus diesen
+Vokalen besteht aus.
 
 Erwartete Ausgabe:
 IeIeeeoueeeueuEieeoeeeeueeieaieeieeiEiueeueieieeieieueieieaeeIoaioeaeiuueoiee
