@@ -95,6 +95,27 @@ while a < 10:             # solange a kleiner 10 ...
     ....
 ```
 
+```
+# Schleifen mit Strings
+s = 'Habicht'
+for i in range(len(s)):             # durch die Zeichen eines Strings mit dem Index laufen.
+    print(s[i])
+
+s = 'Habicht'
+for c in s:                         # durch die Zeichen eines Strings laufen
+    print(c)
+```
+
+```
+# Schleifen mit Listen
+a = [4,2,10,6]
+for i in range(len(a)):             # durch die Elemente der Liste mit dem Index laufen.
+    print(a[i])
+
+for x in a:                         # durch die Elemente der Liste laufen
+    print(x)
+```
+
 ## Strings
 
 ```
@@ -121,17 +142,6 @@ s[::-1]      # den gesamten String rückwärts:  'thcibaH'
 
 ```
 
-```
-# Schleifen mit Strings
-s = 'Habicht'
-for i in range(len(s)):             # durch die Zeichen eines Strings mit dem Index laufen.
-    print(s[i])
-
-s = 'Habicht'
-for c in s:                         # durch die Zeichen eines Strings laufen
-    print(c)
-
-```
 
 ## Listen
 
@@ -161,6 +171,30 @@ def add(x, y):
     return x + y
 
 ```
+
+## Einlesen von Dateien
+
+```
+f = open('input.txt')
+zeile = f.readline().strip()   # eine Zeile als String einlesen
+x = int(f.readline())          # eine Zahl einlesen
+f.close()
+```
+
+```
+f = open('input.txt')
+a = [int(x) for x in f.readline().split()]   # eine Zeile mit Zahlen in eine Liste einlesen
+f.close()
+```
+
+```
+f = open('input.txt')
+text = f.read()                # den gesamten Text mit Zeilenvorschüben einlesen
+f.close()
+text = text.replace('\n',' ')  # Zeilenvorschub durch Leerzeichen ersetzen
+```
+
+
 
 ## Fortsetzungszeichen
 Wenn eine Programmzeile zu lang wird, kann man sie mit dem Fortsetzungzeichen `\`
