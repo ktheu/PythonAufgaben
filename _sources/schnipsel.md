@@ -75,8 +75,9 @@ not a        # dreht den Wahrheitswert um
 ```
 
 ## Schleifen  
-For-Schleifen mit range
+
 ```
+# for-Schleifen mit range
 for i in range(5):        # 0,1,2,3,4
     ...
 for i in range(2,5):      # 2,3,4
@@ -87,9 +88,9 @@ for i in range(5,-1,-1):  # 5,4,3,2,1,0
     ...
 
 ```
-
-While-Schleife
+ 
 ```
+# while-Schleife
 while a < 10:             # solange a kleiner 10 ...
     ....
 ```
@@ -139,8 +140,8 @@ a = []        # leere Liste
 a = [1,2,3]   # eine Liste mit 3 Elementen
 len(a)        # Länge der Liste
 a[0]          # 1    Indexing wie bei Strings
-a[len(a)-1]   # 3
-a[-1]         # 3         
+a[len(a)-1]   # 3    letztes Element
+a[-1]         # 3    letztes Element       
 a.append(4)   # [1,2,3,4]   ein Element hinten an die Liste einfügen.
 ```
 
@@ -148,6 +149,10 @@ a.append(4)   # [1,2,3,4]   ein Element hinten an die Liste einfügen.
 ```
 m = {}        # leeres dict
 m = {'A':1, 'B':2}  
+
+# durch ein dict laufen und die key-value Paare ausgeben
+for k in m:
+    print(k, m[k])
 ```
 
 ## Funktionen
@@ -155,4 +160,20 @@ m = {'A':1, 'B':2}
 def add(x, y):
     return x + y
 
+```
+
+## Fortsetzungszeichen
+Wenn eine Programmzeile zu lang wird, kann man sie mit dem Fortsetzungzeichen `\`
+auf mehrere Zeilen verteilen.
+
+```
+s = 'Hal\
+lo Welt'
+
+a = [1,2,3, \
+     5,6]
+
+if 3 < 5 or 7 < 10 \
+or 8 < 10:
+    print('ja')
 ```
