@@ -154,6 +154,7 @@ Aufgabe 2.9:
 Erwartete Ausgabe:
 [5, 9, 33, 14, 5, 26]
 '''
+a = [5, 9, 2, 14, 5, 26]
 # your code
 ```
 
@@ -237,7 +238,7 @@ Erstelle ein dict m1, dass den Ländern 'England', 'Frankreich' und 'Italien' ih
 # your code
 ```
 
-<!-- #1 #str   -->
+<!-- #1 #str #dict  -->
 
 ```
 '''
@@ -257,7 +258,7 @@ Erstelle ein dict m2, dass den Städten London, Paris und Rom ihre Länder zuord
 
 ```
 
-<!-- #1 #str   -->
+<!-- #1 #str  #dict -->
 
 ```
 '''
@@ -276,7 +277,7 @@ Zeile1:   3  10  12  101  25  17
 # your code
 ```
 
-<!-- #1 #str   -->
+<!-- #1 #str #dict  -->
 
 ```
 '''

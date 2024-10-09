@@ -28,6 +28,7 @@ k = 5        # Zuweisungen eines int (ganze Zahl)
 x = 2.6      # Zuweisung eines float (Dezimalzahl)
 s = 'Hallo'  # Zuweisung eines Strings mit einfachen
 s1 = "Welt"  #    oder doppelten Hochkommata
+b = True     # True/False sind boolesche Werte (Wahrheitswerte)
 ```
 
 ## Ausgabe
@@ -43,8 +44,7 @@ print(a, end=' ')        # nach der Ausgabe keine neue Zeile, sondern ein Leerze
 a = 42
 print(f'Der Wert von a ist {a}.')
 print(f'{a} zum Quadrat ist {a**2}.')
-
-
+x = 3.1415
 
 ```
 
@@ -67,8 +67,8 @@ elif a > 5:
     print('B')
 else:
     print('C')
-
 ```
+
 ```
 if a % 2 == 0:       # ist a gerade Zahl?
     ...
@@ -86,7 +86,6 @@ if a % b == 0:       # ist b ein Teiler von a?
 
 ## Boolesche Operatoren
 ```
-# Boolesche Operatoren
 a and b      # True wenn a und b True sind
 a or  b      # True wenn mindestens einer von beiden True ist
 not a        # dreht den Wahrheitswert um
@@ -95,10 +94,12 @@ not a        # dreht den Wahrheitswert um
 ## Eingebaute Funktionen
 ```
 min(a), max(a), sum(a)    # Minimum, Maximum, Summe einer Liste a mit Zahlen
-x = round(5.76543, 2)     # Auf 2 Stellen hinterm Komma runden
 abs(x)                    # Betrag einer Zahl x
+round(5.76543, 2)         # Auf 2 Stellen hinterm Komma runden
 ord(c)                    # ASCII bzw. Unicode-Codepoint eines Zeichens c
 chr(x)                    # Zeichen einer ASCII-Zahl x oder Unicode-Codepoints
+list(s)                   # Wandelt einen Objekt (falls möglich) in eine Liste um
+int(x), float(x)          # Wandelt ein Objekt (falls möglich) in ein int/float um
 ```
 
 
@@ -116,8 +117,6 @@ for i in range(5,-1,-1):  # 5,4,3,2,1,0
     ...
 
 ```
- 
-
 
 ```
 # Schleifen mit Strings
@@ -135,8 +134,8 @@ a = [4,2,10,6]
 for i in range(len(a)):             # durch die Elemente der Liste mit dem Index laufen.
     print(a[i])
 
-for x in a:                         # durch die Elemente der Liste laufen
-    print(x)
+for x in a:                         # lesend! durch die Elemente der Liste laufen
+    print(x)                        # die Elemente können mit dieser Schleife nicht verändert werden.
 ```
 ```
 # while-Schleife
@@ -148,6 +147,16 @@ while s:                  # solange String s nicht leer ist ...
 
 while a:                  # solange in der Liste a noch Elemente sind ...
     ....
+
+while True:               # oder: while 1, Endlosschleife
+    ....
+```
+
+```
+# nur in Schleifen:
+break                     # verlässt Schleife und macht dahinter weiter
+continue                  # startet nächsten Schleifendurchgang
+
 ```
 
 
@@ -175,7 +184,6 @@ s[3:]        # 'icht'
 s[2:5]       # 'bic'
 s[::2]       # jedes zweite Zeichen: 'Hbct'
 s[::-1]      # den gesamten String rückwärts:  'thcibaH'
-
 ```
 
 
@@ -194,11 +202,35 @@ a.append(4)   # [1,2,3,4]   ein Element hinten an die Liste einfügen.
 ## Dictionaries
 ```
 m = {}        # leeres dict
-m = {'A':1, 'B':2}  
+m = dict()    # leeres dict
+m = {'a':1, 'b':2} 
+m['c'] = 3    # neuer Wert oder update im dictionary
+k in m        # k Schlüssel in m ?
+k not in m    # k kein Schlüssel in m?
+len(m)        # Anzahl Einträge in m
+del m['b']    # den Eintrag mit Schlüssel 'b' löschen
 
 # durch ein dict laufen und die key-value Paare ausgeben
-for k in m:
-    print(k, m[k])
+for k in m:            # durch alle keys von m laufen
+    ...                # dasselbe wie: for k in m.keys():   
+
+for v in m.values():   # durch alle values von m laufen
+    ...
+
+for k, v in m.items(): # durch alle key,value-Paare laufen
+    ...
+```
+
+## Sets
+```
+s = set()           # ein leeres Set
+s = {1, 2, 3}       # set mit 3 Elementen
+len(s)              # Länge von s
+x in s              # x im set?
+x not in s          # x nicht im set?
+s <= t, s < t       # s Teilmenge, echte Teilmenge von t?
+s | t, s & t        # Vereinigung, Schnittmenge
+s - t, s ^ t        # Differenz, Entweder-Oder
 ```
 
 ## Funktionen
@@ -206,6 +238,20 @@ for k in m:
 def add(x, y):
     return x + y
 
+```
+
+## Zufall
+```
+import random
+random.random()       # float Zufallszahl x, 0 <= x < 1
+random.uniform(0,10)  # float Zufallszahl x, 0 <= x <= 10
+random.randint(0,20)  # int Zufallszahl k, 0 <= k <= 20
+random.randrange(2, 101, 2)   # eine gerade Zahl zwischen 2 und 100   
+
+random.seed(x)        # x irgendeine Zahl, setzt den random-seed für reproduzierbare Ergebnisse
+random.choice(a)      # ein zufälliges Element der Liste a
+random.shuffle(a)     # mischt die Elemente der Liste a
+random.sample(a, 2)   # 2 zufällige Elemente aus Liste a
 ```
 
 ## Einlesen von Dateien
