@@ -20,7 +20,7 @@ Kommentar
 '''
 ```
 
-## Variablen
+## Variablen und Zuweisungen
 Die wichtigsten einfachen Datentypen sind: int, float, str, bool.
 
 ```
@@ -29,6 +29,13 @@ x = 2.6      # Zuweisung eines float (Dezimalzahl)
 s = 'Hallo'  # Zuweisung eines Strings mit einfachen
 s1 = "Welt"  #    oder doppelten Hochkommata
 b = True     # True/False sind boolesche Werte (Wahrheitswerte)
+```
+
+Kurzformen für spezielle Zuweisungen
+```
+x += 1       # statt x = x + 1
+x *= 2       # statt x = x * 2
+             # analog - / // %
 ```
 
 ## Ausgabe
