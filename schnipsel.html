@@ -395,7 +395,9 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strings">Strings</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#listen">Listen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dictionaries">Dictionaries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sets">Sets</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funktionen">Funktionen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zufall">Zufall</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#einlesen-von-dateien">Einlesen von Dateien</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fortsetzungszeichen">Fortsetzungszeichen</a></li>
 </ul>
@@ -437,6 +439,7 @@ document.write(`
 <span class="n">x</span> <span class="o">=</span> <span class="mf">2.6</span>      <span class="c1"># Zuweisung eines float (Dezimalzahl)</span>
 <span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;Hallo&#39;</span>  <span class="c1"># Zuweisung eines Strings mit einfachen</span>
 <span class="n">s1</span> <span class="o">=</span> <span class="s2">&quot;Welt&quot;</span>  <span class="c1">#    oder doppelten Hochkommata</span>
+<span class="n">b</span> <span class="o">=</span> <span class="kc">True</span>     <span class="c1"># True/False sind boolesche Werte (Wahrheitswerte)</span>
 </pre></div>
 </div>
 </section>
@@ -451,8 +454,7 @@ document.write(`
 <span class="n">a</span> <span class="o">=</span> <span class="mi">42</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Der Wert von a ist </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s1">.&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s1"> zum Quadrat ist </span><span class="si">{</span><span class="n">a</span><span class="o">**</span><span class="mi">2</span><span class="si">}</span><span class="s1">.&#39;</span><span class="p">)</span>
-
-
+<span class="n">x</span> <span class="o">=</span> <span class="mf">3.1415</span>
 
 </pre></div>
 </div>
@@ -477,7 +479,6 @@ document.write(`
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;B&#39;</span><span class="p">)</span>
 <span class="k">else</span><span class="p">:</span>
     <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;C&#39;</span><span class="p">)</span>
-
 </pre></div>
 </div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">if</span> <span class="n">a</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>       <span class="c1"># ist a gerade Zahl?</span>
@@ -498,8 +499,7 @@ document.write(`
 </section>
 <section id="boolesche-operatoren">
 <h2>Boolesche Operatoren<a class="headerlink" href="#boolesche-operatoren" title="Link to this heading">#</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Boolesche Operatoren</span>
-<span class="n">a</span> <span class="ow">and</span> <span class="n">b</span>      <span class="c1"># True wenn a und b True sind</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="ow">and</span> <span class="n">b</span>      <span class="c1"># True wenn a und b True sind</span>
 <span class="n">a</span> <span class="ow">or</span>  <span class="n">b</span>      <span class="c1"># True wenn mindestens einer von beiden True ist</span>
 <span class="ow">not</span> <span class="n">a</span>        <span class="c1"># dreht den Wahrheitswert um</span>
 </pre></div>
@@ -508,10 +508,12 @@ document.write(`
 <section id="eingebaute-funktionen">
 <h2>Eingebaute Funktionen<a class="headerlink" href="#eingebaute-funktionen" title="Link to this heading">#</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">min</span><span class="p">(</span><span class="n">a</span><span class="p">),</span> <span class="nb">max</span><span class="p">(</span><span class="n">a</span><span class="p">),</span> <span class="nb">sum</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>    <span class="c1"># Minimum, Maximum, Summe einer Liste a mit Zahlen</span>
-<span class="n">x</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="mf">5.76543</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>     <span class="c1"># Auf 2 Stellen hinterm Komma runden</span>
 <span class="nb">abs</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>                    <span class="c1"># Betrag einer Zahl x</span>
+<span class="nb">round</span><span class="p">(</span><span class="mf">5.76543</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>         <span class="c1"># Auf 2 Stellen hinterm Komma runden</span>
 <span class="nb">ord</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>                    <span class="c1"># ASCII bzw. Unicode-Codepoint eines Zeichens c</span>
 <span class="nb">chr</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>                    <span class="c1"># Zeichen einer ASCII-Zahl x oder Unicode-Codepoints</span>
+<span class="nb">list</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>                   <span class="c1"># Wandelt einen Objekt (falls möglich) in eine Liste um</span>
+<span class="nb">int</span><span class="p">(</span><span class="n">x</span><span class="p">),</span> <span class="nb">float</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>          <span class="c1"># Wandelt ein Objekt (falls möglich) in ein int/float um</span>
 </pre></div>
 </div>
 </section>
@@ -544,8 +546,8 @@ document.write(`
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">)):</span>             <span class="c1"># durch die Elemente der Liste mit dem Index laufen.</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
 
-<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">a</span><span class="p">:</span>                         <span class="c1"># durch die Elemente der Liste laufen</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">a</span><span class="p">:</span>                         <span class="c1"># lesend! durch die Elemente der Liste laufen</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>                        <span class="c1"># die Elemente können mit dieser Schleife nicht verändert werden.</span>
 </pre></div>
 </div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># while-Schleife</span>
@@ -557,6 +559,15 @@ document.write(`
 
 <span class="k">while</span> <span class="n">a</span><span class="p">:</span>                  <span class="c1"># solange in der Liste a noch Elemente sind ...</span>
     <span class="o">....</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>               <span class="c1"># oder: while 1, Endlosschleife</span>
+    <span class="o">....</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># nur in Schleifen:</span>
+<span class="k">break</span>                     <span class="c1"># verlässt Schleife und macht dahinter weiter</span>
+<span class="k">continue</span>                  <span class="c1"># startet nächsten Schleifendurchgang</span>
+
 </pre></div>
 </div>
 </section>
@@ -583,7 +594,6 @@ document.write(`
 <span class="n">s</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span>       <span class="c1"># &#39;bic&#39;</span>
 <span class="n">s</span><span class="p">[::</span><span class="mi">2</span><span class="p">]</span>       <span class="c1"># jedes zweite Zeichen: &#39;Hbct&#39;</span>
 <span class="n">s</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>      <span class="c1"># den gesamten String rückwärts:  &#39;thcibaH&#39;</span>
-
 </pre></div>
 </div>
 </section>
@@ -602,11 +612,36 @@ document.write(`
 <section id="dictionaries">
 <h2>Dictionaries<a class="headerlink" href="#dictionaries" title="Link to this heading">#</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="p">{}</span>        <span class="c1"># leeres dict</span>
-<span class="n">m</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;A&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">}</span>  
+<span class="n">m</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">()</span>    <span class="c1"># leeres dict</span>
+<span class="n">m</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;a&#39;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">:</span><span class="mi">2</span><span class="p">}</span> 
+<span class="n">m</span><span class="p">[</span><span class="s1">&#39;c&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">3</span>    <span class="c1"># neuer Wert oder update im dictionary</span>
+<span class="n">k</span> <span class="ow">in</span> <span class="n">m</span>        <span class="c1"># k Schlüssel in m ?</span>
+<span class="n">k</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">m</span>    <span class="c1"># k kein Schlüssel in m?</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>        <span class="c1"># Anzahl Einträge in m</span>
+<span class="k">del</span> <span class="n">m</span><span class="p">[</span><span class="s1">&#39;b&#39;</span><span class="p">]</span>    <span class="c1"># den Eintrag mit Schlüssel &#39;b&#39; löschen</span>
 
 <span class="c1"># durch ein dict laufen und die key-value Paare ausgeben</span>
-<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">m</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">k</span><span class="p">,</span> <span class="n">m</span><span class="p">[</span><span class="n">k</span><span class="p">])</span>
+<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">m</span><span class="p">:</span>            <span class="c1"># durch alle keys von m laufen</span>
+    <span class="o">...</span>                <span class="c1"># dasselbe wie: for k in m.keys():   </span>
+
+<span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">m</span><span class="o">.</span><span class="n">values</span><span class="p">():</span>   <span class="c1"># durch alle values von m laufen</span>
+    <span class="o">...</span>
+
+<span class="k">for</span> <span class="n">k</span><span class="p">,</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">m</span><span class="o">.</span><span class="n">items</span><span class="p">():</span> <span class="c1"># durch alle key,value-Paare laufen</span>
+    <span class="o">...</span>
+</pre></div>
+</div>
+</section>
+<section id="sets">
+<h2>Sets<a class="headerlink" href="#sets" title="Link to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">s</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>           <span class="c1"># ein leeres Set</span>
+<span class="n">s</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">}</span>       <span class="c1"># set mit 3 Elementen</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>              <span class="c1"># Länge von s</span>
+<span class="n">x</span> <span class="ow">in</span> <span class="n">s</span>              <span class="c1"># x im set?</span>
+<span class="n">x</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">s</span>          <span class="c1"># x nicht im set?</span>
+<span class="n">s</span> <span class="o">&lt;=</span> <span class="n">t</span><span class="p">,</span> <span class="n">s</span> <span class="o">&lt;</span> <span class="n">t</span>       <span class="c1"># s Teilmenge, echte Teilmenge von t?</span>
+<span class="n">s</span> <span class="o">|</span> <span class="n">t</span><span class="p">,</span> <span class="n">s</span> <span class="o">&amp;</span> <span class="n">t</span>        <span class="c1"># Vereinigung, Schnittmenge</span>
+<span class="n">s</span> <span class="o">-</span> <span class="n">t</span><span class="p">,</span> <span class="n">s</span> <span class="o">^</span> <span class="n">t</span>        <span class="c1"># Differenz, Entweder-Oder</span>
 </pre></div>
 </div>
 </section>
@@ -615,6 +650,21 @@ document.write(`
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
     <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
 
+</pre></div>
+</div>
+</section>
+<section id="zufall">
+<h2>Zufall<a class="headerlink" href="#zufall" title="Link to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+<span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">()</span>       <span class="c1"># float Zufallszahl x, 0 &lt;= x &lt; 1</span>
+<span class="n">random</span><span class="o">.</span><span class="n">uniform</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">10</span><span class="p">)</span>  <span class="c1"># float Zufallszahl x, 0 &lt;= x &lt;= 10</span>
+<span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">20</span><span class="p">)</span>  <span class="c1"># int Zufallszahl k, 0 &lt;= k &lt;= 20</span>
+<span class="n">random</span><span class="o">.</span><span class="n">randrange</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">101</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>   <span class="c1"># eine gerade Zahl zwischen 2 und 100   </span>
+
+<span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>        <span class="c1"># x irgendeine Zahl, setzt den random-seed für reproduzierbare Ergebnisse</span>
+<span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>      <span class="c1"># ein zufälliges Element der Liste a</span>
+<span class="n">random</span><span class="o">.</span><span class="n">shuffle</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>     <span class="c1"># mischt die Elemente der Liste a</span>
+<span class="n">random</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>   <span class="c1"># 2 zufällige Elemente aus Liste a</span>
 </pre></div>
 </div>
 </section>
@@ -733,7 +783,9 @@ auf mehrere Zeilen verteilen.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strings">Strings</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#listen">Listen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dictionaries">Dictionaries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sets">Sets</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funktionen">Funktionen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zufall">Zufall</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#einlesen-von-dateien">Einlesen von Dateien</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fortsetzungszeichen">Fortsetzungszeichen</a></li>
 </ul>

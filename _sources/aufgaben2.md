@@ -238,7 +238,7 @@ Erstelle ein dict m1, dass den Ländern 'England', 'Frankreich' und 'Italien' ih
 # your code
 ```
 
-<!-- #1 #str   -->
+<!-- #1 #str #dict  -->
 
 ```
 '''
@@ -258,7 +258,7 @@ Erstelle ein dict m2, dass den Städten London, Paris und Rom ihre Länder zuord
 
 ```
 
-<!-- #1 #str   -->
+<!-- #1 #str  #dict -->
 
 ```
 '''
@@ -277,7 +277,7 @@ Zeile1:   3  10  12  101  25  17
 # your code
 ```
 
-<!-- #1 #str   -->
+<!-- #1 #str #dict  -->
 
 ```
 '''

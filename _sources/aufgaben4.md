@@ -24,10 +24,10 @@ Schreibe eine Funktion func2, der eine Liste a mit ints und ein int k übergeben
 'YES' zurück, wenn in a mindestens k gerade Zahlen sind.
 
 >>> func2([1,2,3,4],2)
-'YES'
+YES
 
 >>> func2([1,2,3,4,5,6],4)
-'NO'
+NO
 '''
 #your code
 ```
@@ -60,10 +60,10 @@ Schreibe eine Funktion func4, der eine Liste a mit Strings und eine String s üb
 und die 'YES' returned, wenn s als Teilstring in einer der Strings in Liste a vorkommt, sonst 'NO'.
 
 >>> func4(['abc', 'abd', 'abe'], 'bd')
-'YES'
+YES
 
 >>> func4(['abc', 'abd', 'abe'], 'bf')
-'NO'
+NO
 
 '''
 # your code
@@ -131,13 +131,13 @@ Schreibe eine Funktion func8, der ein String s übergeben wird der nur aus '0' u
 die 'YES' zurückgibt wenn 1 häufiger in s vorkommt als 0, sonst 'NO'.
 
 >>> func8('10011')
-'YES'
+YES
 
 >>> func8('01101010110000')
-'NO'
+NO
 
 >>> func8('0')
-'NO'
+NO
 '''
 # your code
 ```
@@ -184,10 +184,10 @@ Schreibe eine Funktion func11, der eine Liste a mit Zahlen übergeben wird und e
 und die 'YES' returned, wenn k größer als alle Zahlen in a ist, sonst 'NO'.
 
 >>> func11([3,4,5],5)
-'NO'
+NO
 
 >>> func11([3,4,5],6)
-'YES'
+YES
 '''
 # your code
 ```
