@@ -38,6 +38,13 @@ x *= 2       # statt x = x * 2
              # analog - / // %
 ```
 
+```
+x = None            # es wurde noch kein Wert zugewiesen
+x = float('inf')    # Unendlich 
+x = -float('inf')   # Minus Unendlich
+```
+ 
+
 ## Ausgabe
 
 ```
@@ -80,6 +87,13 @@ else:
 if a % 2 == 0:       # ist a gerade Zahl?
     ...
 if a % b == 0:       # ist b ein Teiler von a?
+    ...
+```
+
+```
+if x is None:        # wurde x noch kein Wert zugewiesen?
+    ...
+if x is not None:    # wurde x schon ein Wert zugewiesen?
     ...
 ```
 
