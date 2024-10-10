@@ -368,7 +368,7 @@ f.close()
 ```
 
 ```
-f = open('input.txt')
+f = open('input.txt', encoding='utf-8')   # meist die richtige Wahl für Umlaute etc.
 text = f.read()                # den gesamten Text mit Zeilenvorschüben einlesen
 f.close()
 text = text.replace('\n',' ')  # Zeilenvorschub durch Leerzeichen ersetzen

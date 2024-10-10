@@ -74,11 +74,16 @@ Erwartete Ausgabe: 15
 
 
 <!-- #2 #einlesen -->
-
+ 
+```
+%%writefile input.txt
+42
+-12
+10
 ```
 '''
 Aufgabe 5.4
-Lies die Zahlen aus input.txt in die Variablen a, b, c ein und gib 
+Lies die Zahlen aus obigem input.txt in die Variablen a, b, c ein und gib 
 diese Variablen und ihre Summe aus.
 
 Erwartete Ausgabe:
@@ -87,24 +92,8 @@ Erwartete Ausgabe:
 ```
 
 ```
-%%writefile input.txt
-42
--12
-10
-```
 ---
 <!-- #2 #einlesen -->
-
-```
-'''
-Aufgabe 5.5
-Die erste Zahl gibt an, wieviele Zahlen noch folgen. Lies die Zahlen aus 
-input.txt in eine Liste a ein und gib diese aus.
-
-Erwartete Ausgabe:
-[10, 20, 40]
-'''
-```
 
 ```
 %%writefile input.txt
@@ -113,21 +102,22 @@ Erwartete Ausgabe:
 20
 40
 ```
+
+```
+'''
+Aufgabe 5.5
+Die erste Zahl gibt an, wieviele Zahlen noch folgen. Lies die Zahlen aus obigem
+input.txt in eine Liste a ein und gib diese aus.
+
+Erwartete Ausgabe:
+[10, 20, 40]
+'''
+```
+
+
 ---- 
 <!-- #2 #einlesen -->
 
-```
-'''
-Aufgabe 5.6
-Lies die Zahl n und den String s aus input.txt ein und gib s n-mal aus.
-
-Erwartete Ausgabe:
-Hallo
-Hallo
-Hallo
-'''
-# your code
-```
 
 ```
 %%writefile input.txt
@@ -135,13 +125,32 @@ Hallo
 Hallo 
 ```
 
+```
+'''
+Aufgabe 5.6
+Lies die Zahl n und den String s aus obigem input.txt ein und gib s n-mal aus.
+
+Erwartete Ausgabe:
+Hallo
+Hallo
+Hallo
+'''
+# your code
+```
+
+
 ---
 <!-- #2 #einlesen -->
 
 ```
+%%writefile input.txt
+3 10 8 4 -3 14 42 -9
+```
+
+```
 '''
 Aufgabe 5.7
-Alle Zahlen stehen in einer Zeile. Lies die Zahlen aus input.txt in 
+Alle Zahlen stehen in einer Zeile. Lies die Zahlen aus obigem input.txt in 
 eine Liste ein und gib diese aus.
 
 Erwartete Ausgabe:
@@ -149,14 +158,19 @@ Erwartete Ausgabe:
 '''
 # your code
 ```
-```
-%%writefile input.txt
-3 10 8 4 -3 14 42 -9
-```
+
 ----
 <!-- #2 #einlesen -->
 
 ```
+```
+%%writefile input.txt
+In der Innenwelt des Computers werden Nullen und Einsen verschoben, verrechnet
+und gespeichert. Dass dies keinerlei Einschränkung bedeutet, wissen
+wir bereits: Töne, Bilder und beliebige andere Informationen lassen sich durch
+0–1-Muster codieren.
+```
+
 '''
 Aufgabe 5.8
 Lies den Text aus input.txt in eine Variable data ein.
@@ -171,28 +185,28 @@ In der Innenwelt des Computers werden Nullen und Einsen verschoben, verrechnet u
 # your code
 ```
 
-```
-%%writefile input.txt
-In der Innenwelt des Computers werden Nullen und Einsen verschoben, verrechnet
-und gespeichert. Dass dies keinerlei Einschränkung bedeutet, wissen
-wir bereits: Töne, Bilder und beliebige andere Informationen lassen sich durch
-0–1-Muster codieren.
-```
+
 
 
 <!-- #2 #einlesen -->
 
 ```
+%%writefile input.txt
+Die ist ein Text. Da haben wir die Umlaute ä ö und ü. Wir testen auch das ß.
+Satzzeichen wie ?,!; sollen nicht übernommen werden.
+```
+
+```
 '''
-Aufgabe 5.10
-Lies den Text aus dem letzten input.txt in eine Variable data ein.
-Übernimm nur die Vokale aus dem Text und und gib den String, der nur aus diesen
-Vokalen besteht aus.
+Aufgabe 5.9
+Lies den Text aus dem obigen input.txt in eine Variable data0 ein.
+Wandle alles in Kleinbuchstaben um. In die Variabel data sollen nur die Buchstaben 
+(auch Umlaute und ß) aus data0 übernommen werden, keine Leerzeichen,
+Zeilenvorschübe oder Satzzeichen. Gib data aus.
 
 Erwartete Ausgabe:
-IeIeeeoueeeueuEieeoeeeeueeieaieeieeiEiueeueieieeieieueieieaeeIoaioeaeiuueoiee
+dieisteintextdahabenwirdieumlauteäöundüwirtestenauchdasßsatzzeichenwiesollennichtübernommenwerden
 '''
-# your code
 ```
 
 
