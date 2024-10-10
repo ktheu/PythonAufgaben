@@ -1,6 +1,11 @@
 # Aufgabengruppen
 Aufgaben zu bestimmten Themen
 
+## Basics
+```
+Aufgaben 1, 2
+```
+
 ## Dictionaries
 ```
 2.13, 2.14, 2.15

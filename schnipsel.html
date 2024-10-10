@@ -420,6 +420,17 @@ document.write(`
 <span class="n">Shift</span> <span class="o">+</span> <span class="n">Enter</span> <span class="o">-</span> <span class="n">Ausführen</span> <span class="n">der</span> <span class="n">Zelle</span> <span class="n">ohne</span> <span class="n">Sprung</span> <span class="ow">in</span> <span class="n">die</span> <span class="n">nächste</span> <span class="n">Zelle</span> 
 <span class="n">Neue</span> <span class="n">Zelle</span><span class="p">:</span> <span class="n">Click</span> <span class="n">auf</span> <span class="o">+</span> <span class="n">oberhalb</span> <span class="n">des</span> <span class="n">Hauptarbeitsbereichs</span>  
 <span class="n">Zelle</span> <span class="n">löschen</span><span class="p">:</span> <span class="n">Mit</span> <span class="n">dem</span> <span class="n">Cursor</span> <span class="n">neben</span> <span class="n">die</span> <span class="n">Zelle</span> <span class="n">klicken</span><span class="p">,</span> <span class="n">dann</span> <span class="n">zweimal</span> <span class="n">Taste</span> <span class="n">D</span>  
+<span class="n">In</span> <span class="n">einer</span> <span class="n">Code</span> <span class="n">Zelle</span><span class="p">:</span> <span class="n">Tab</span><span class="o">-</span><span class="n">rechts</span> <span class="o">-</span> <span class="n">Kontexthilfe</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Tab</span><span class="o">-</span><span class="n">rechts</span> <span class="o">-</span> <span class="n">Kontexthilfe</span> 
+<span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;Hallo&#39;</span>
+<span class="n">s</span><span class="o">.</span> <span class="o">+</span>  <span class="n">Tab</span><span class="o">-</span><span class="n">rechts</span>  <span class="o">-</span> <span class="n">alle</span> <span class="n">möglichen</span> <span class="n">Methoden</span>      
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># %%-Anweisungen (magic commands) immer am Beginn einer Zelle</span>
+<span class="o">%%</span><span class="n">writefile</span> <span class="nb">input</span><span class="o">.</span><span class="n">txt</span>  <span class="o">-</span> <span class="n">schreibt</span> <span class="n">Inhalt</span> <span class="n">der</span> <span class="n">Zelle</span> <span class="ow">in</span> <span class="n">Datei</span>
+<span class="o">%%</span><span class="n">time</span>             <span class="o">-</span> <span class="n">gibt</span> <span class="n">Laufzeit</span> <span class="n">für</span> <span class="n">Zelle</span> <span class="n">aus</span>
 </pre></div>
 </div>
 </section>
@@ -600,7 +611,7 @@ document.write(`
 <span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;Habicht&#39;</span>         
 <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>       <span class="c1">#  7, die Länge des Strings </span>
 <span class="n">s</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>         <span class="c1"># &#39;H&#39;</span>
-<span class="n">s</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>         <span class="c1"># &#39;i&#39;</span>
+<span class="n">s</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span>         <span class="c1"># &#39;i&#39;</span>
 <span class="n">s</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>  <span class="c1"># &#39;t&#39;</span>
 <span class="n">s</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>        <span class="c1"># &#39;t&#39;</span>
 <span class="n">s</span><span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">]</span>        <span class="c1"># &#39;h&#39;</span>
@@ -612,6 +623,11 @@ document.write(`
 <span class="n">s</span><span class="p">[</span><span class="mi">2</span><span class="p">:</span><span class="mi">5</span><span class="p">]</span>       <span class="c1"># &#39;bic&#39;</span>
 <span class="n">s</span><span class="p">[::</span><span class="mi">2</span><span class="p">]</span>       <span class="c1"># jedes zweite Zeichen: &#39;Hbct&#39;</span>
 <span class="n">s</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>      <span class="c1"># den gesamten String rückwärts:  &#39;thcibaH&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Hilfe</span>
+<span class="n">help</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>         <span class="c1"># alle Methoden des Strings</span>
+<span class="n">help</span><span class="p">(</span><span class="nb">str</span><span class="o">.</span><span class="n">count</span><span class="p">)</span>   <span class="c1"># Hilfe zur Methode count</span>
 </pre></div>
 </div>
 </section>
@@ -626,6 +642,23 @@ document.write(`
 <span class="n">a</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>   <span class="c1"># [1,2,3,4]   ein Element hinten an die Liste einfügen.</span>
 </pre></div>
 </div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Slicing</span>
+<span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>        <span class="c1"># Teilliste von Index 1 bis ausschließlich Index 3  </span>
+<span class="n">a</span><span class="p">[</span><span class="mi">3</span><span class="p">:]</span>         <span class="c1"># Teilliste ab Index 3 bis Ende </span>
+<span class="n">a</span><span class="p">[:</span><span class="mi">3</span><span class="p">]</span>         <span class="c1"># die ersten 3 Elementen: von Beginn bis Index 3 (ausschließlich) </span>
+<span class="n">a</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">:]</span>        <span class="c1"># die letzten 3 Elemente</span>
+<span class="n">a</span><span class="p">[::</span><span class="mi">2</span><span class="p">]</span>        <span class="c1"># jedes 2. Element</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="ow">in</span> <span class="n">a</span><span class="p">,</span> <span class="n">x</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">a</span>   <span class="c1"># Element x in Liste a vorhanden?</span>
+<span class="n">a</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>    <span class="c1"># Anzahl Vorkommen von x in a </span>
+<span class="n">a</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>    <span class="c1"># Index des ersten Vorkommens von x, Fehler wenn nicht vorhanden</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>         <span class="c1">#  Methoden der Liste</span>
+<span class="n">help</span><span class="p">(</span><span class="nb">list</span><span class="o">.</span><span class="n">insert</span><span class="p">)</span>   <span class="c1">#  Hilfe zur Listenmethode insert</span>
+</pre></div>
+</div>
 </section>
 <section id="dictionaries">
 <h2>Dictionaries<a class="headerlink" href="#dictionaries" title="Link to this heading">#</a></h2>
@@ -636,7 +669,9 @@ document.write(`
 <span class="n">k</span> <span class="ow">in</span> <span class="n">m</span>        <span class="c1"># k Schlüssel in m ?</span>
 <span class="n">k</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">m</span>    <span class="c1"># k kein Schlüssel in m?</span>
 <span class="nb">len</span><span class="p">(</span><span class="n">m</span><span class="p">)</span>        <span class="c1"># Anzahl Einträge in m</span>
-<span class="k">del</span> <span class="n">m</span><span class="p">[</span><span class="s1">&#39;b&#39;</span><span class="p">]</span>    <span class="c1"># den Eintrag mit Schlüssel &#39;b&#39; löschen</span>
+<span class="k">del</span> <span class="n">m</span><span class="p">[</span><span class="s1">&#39;b&#39;</span><span class="p">]</span>    <span class="c1"># löscht Eintrag mit Schlüssel &#39;b&#39;  </span>
+<span class="n">v</span> <span class="o">=</span> <span class="n">m</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="n">k</span><span class="p">)</span>  <span class="c1"># löscht Eintrag mit Schlüssel k und gibt value v zurück</span>
+<span class="n">m</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">m1</span><span class="p">)</span>  <span class="c1"># aktualisiert werte und fügt ggf neue hinzu </span>
 
 <span class="c1"># durch ein dict laufen und die key-value Paare ausgeben</span>
 <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="n">m</span><span class="p">:</span>            <span class="c1"># durch alle keys von m laufen</span>

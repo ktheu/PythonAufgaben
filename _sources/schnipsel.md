@@ -8,6 +8,19 @@ Strg + Enter - Ausführen der Zelle und Sprung zur nächsten Zelle
 Shift + Enter - Ausführen der Zelle ohne Sprung in die nächste Zelle 
 Neue Zelle: Click auf + oberhalb des Hauptarbeitsbereichs  
 Zelle löschen: Mit dem Cursor neben die Zelle klicken, dann zweimal Taste D  
+In einer Code Zelle: Tab-rechts - Kontexthilfe
+```
+
+```
+Tab-rechts - Kontexthilfe 
+s = 'Hallo'
+s. +  Tab-rechts  - alle möglichen Methoden      
+```
+
+```
+# %%-Anweisungen (magic commands) immer am Beginn einer Zelle
+%%writefile input.txt  - schreibt Inhalt der Zelle in Datei
+%%time             - gibt Laufzeit für Zelle aus
 ```
 
 ## Kommentare
@@ -193,7 +206,7 @@ s = s1 + ' ' + s2     # Verketten von Strings
 s = 'Habicht'         
 len(s)       #  7, die Länge des Strings 
 s[0]         # 'H'
-s[1]         # 'i'
+s[3]         # 'i'
 s[len(s)-1]  # 't'
 s[-1]        # 't'
 s[-2]        # 'h'
@@ -205,6 +218,12 @@ s[3:]        # 'icht'
 s[2:5]       # 'bic'
 s[::2]       # jedes zweite Zeichen: 'Hbct'
 s[::-1]      # den gesamten String rückwärts:  'thcibaH'
+```
+ 
+```
+# Hilfe
+help(str)         # alle Methoden des Strings
+help(str.count)   # Hilfe zur Methode count
 ```
 
 
@@ -220,6 +239,27 @@ a[-1]         # 3    letztes Element
 a.append(4)   # [1,2,3,4]   ein Element hinten an die Liste einfügen.
 ```
 
+```
+# Slicing
+a[1:3]        # Teilliste von Index 1 bis ausschließlich Index 3  
+a[3:]         # Teilliste ab Index 3 bis Ende 
+a[:3]         # die ersten 3 Elementen: von Beginn bis Index 3 (ausschließlich) 
+a[-3:]        # die letzten 3 Elemente
+a[::2]        # jedes 2. Element
+```
+
+```
+x in a, x not in a   # Element x in Liste a vorhanden?
+a.count(x)    # Anzahl Vorkommen von x in a 
+a.index(x)    # Index des ersten Vorkommens von x, Fehler wenn nicht vorhanden
+```
+
+```
+help(list)         #  Methoden der Liste
+help(list.insert)   #  Hilfe zur Listenmethode insert
+```
+
+
 ## Dictionaries
 ```
 m = {}        # leeres dict
@@ -229,7 +269,9 @@ m['c'] = 3    # neuer Wert oder update im dictionary
 k in m        # k Schlüssel in m ?
 k not in m    # k kein Schlüssel in m?
 len(m)        # Anzahl Einträge in m
-del m['b']    # den Eintrag mit Schlüssel 'b' löschen
+del m['b']    # löscht Eintrag mit Schlüssel 'b'  
+v = m.pop(k)  # löscht Eintrag mit Schlüssel k und gibt value v zurück
+m.update(m1)  # aktualisiert werte und fügt ggf neue hinzu 
 
 # durch ein dict laufen und die key-value Paare ausgeben
 for k in m:            # durch alle keys von m laufen
@@ -296,8 +338,6 @@ text = f.read()                # den gesamten Text mit Zeilenvorschüben einlese
 f.close()
 text = text.replace('\n',' ')  # Zeilenvorschub durch Leerzeichen ersetzen
 ```
-
-
 
 ## Fortsetzungszeichen
 Wenn eine Programmzeile zu lang wird, kann man sie mit dem Fortsetzungzeichen `\`
