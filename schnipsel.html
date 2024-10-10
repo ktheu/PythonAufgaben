@@ -625,11 +625,34 @@ document.write(`
 <span class="n">s</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>      <span class="c1"># den gesamten String rückwärts:  &#39;thcibaH&#39;</span>
 </pre></div>
 </div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">s</span><span class="o">.</span><span class="n">lower</span><span class="p">(),</span> <span class="n">s</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>   <span class="c1"># alles in Klein-, Großbuchstaben</span>
+<span class="n">s</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span><span class="n">s2</span><span class="p">)</span>       <span class="c1"># alle Teilstrings s1 in s2 umwandeln</span>
+<span class="n">s</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>          <span class="c1"># entfernt vorne und hinten Leerzeichen und Seitenvorschub</span>
+<span class="n">s</span><span class="o">.</span><span class="n">strip</span><span class="p">(</span><span class="s1">&#39;?.!;&#39;</span><span class="p">)</span>    <span class="c1"># entfernt vorne und hinten die angegebenen Zeichen</span>
+<span class="n">s</span><span class="o">.</span><span class="n">islower</span><span class="p">(),</span> <span class="n">s</span><span class="o">.</span><span class="n">isupper</span><span class="p">()</span> <span class="c1"># besteht s aus Klein-, Großbuchstaben ?</span>
+<span class="n">s</span><span class="o">.</span><span class="n">isalpha</span><span class="p">(),</span> <span class="n">s</span><span class="o">.</span><span class="n">isdigit</span><span class="p">()</span> <span class="c1"># besteht s aus Buchstaben, Ziffern ?</span>
+<span class="n">s</span><span class="o">.</span><span class="n">isalnum</span><span class="p">()</span>        <span class="c1"># besteht s nur aus Buchstaben und Ziffern?</span>
+<span class="n">s</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">s1</span><span class="p">),</span> <span class="n">s</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="n">s1</span><span class="p">)</span> <span class="c1"># beginnnt, endet s mit s1 ?</span>
+<span class="n">s</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">s1</span><span class="p">)</span>        <span class="c1"># Anzahl Vorkommen von s1 in s</span>
+<span class="n">s</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">s1</span><span class="p">)</span>        <span class="c1"># Index erstes Vorkommen s1 in s, Fehler wenn nicht da</span>
+<span class="n">s</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">s1</span><span class="p">)</span>         <span class="c1"># Index erstes Vorkommen s1 in s, -1 wenn nicht da</span>
+<span class="n">s</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="n">j</span><span class="p">)</span>     <span class="c1"># Suche Vorkommen im Intervall [i,j)</span>
+<span class="n">s1</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">ljust</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>   <span class="c1"># s1 beginnt links mit s, hat Länge 20, ggf. Leerzeichen rechts.</span>
+<span class="n">s1</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">rjust</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>   <span class="c1"># analog rechts</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">split</span><span class="p">()</span>      <span class="c1"># Trenner sind Leerzeichen (auch mehrere) und Seitenvorschub</span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39; &#39;</span><span class="p">)</span>   <span class="c1"># Trenner ist einzelnes Leerzeichen </span>
+<span class="n">a</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="n">s1</span><span class="p">)</span>    <span class="c1"># Trenner ist s1 </span>
+<span class="n">a</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>        <span class="c1"># Liste aus den einzelnen Zeichen von s</span>
+</pre></div>
+</div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Hilfe</span>
 <span class="n">help</span><span class="p">(</span><span class="nb">str</span><span class="p">)</span>         <span class="c1"># alle Methoden des Strings</span>
 <span class="n">help</span><span class="p">(</span><span class="nb">str</span><span class="o">.</span><span class="n">count</span><span class="p">)</span>   <span class="c1"># Hilfe zur Methode count</span>
 </pre></div>
 </div>
+<p><a class="reference external" href="https://www.w3schools.com/python/python_strings.asp">W3C</a></p>
 </section>
 <section id="listen">
 <h2>Listen<a class="headerlink" href="#listen" title="Link to this heading">#</a></h2>

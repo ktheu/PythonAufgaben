@@ -182,7 +182,7 @@ Bitte ein Zeichen eingeben: a
 # your code
 ```
 
-<!-- #1 #str   -->
+<!-- #1 #str #durchlauf  -->
 ```
 '''
 Aufgabe 3.8:
@@ -203,7 +203,7 @@ Bitte einen String eingeben: abbadff
 # your code
 ```
 
-<!-- #1 #str   -->
+<!-- #1 #str  #durchlauf -->
 ```
 '''
 Aufgabe 3.9:
@@ -222,7 +222,7 @@ In nf fo or rm ma at ti ik
 # your code 
 ```
 
-<!-- #1 #str   -->
+<!-- #1 #str #slicing  -->
 ```
 '''
 Aufgabe 3.10:
@@ -245,7 +245,7 @@ Habicht
 ```
 
 
-<!-- #1 #str   -->
+<!-- #1 #str #slicing  -->
 ```
 '''
 Aufgabe 3.11:
@@ -267,7 +267,7 @@ t
 # your code 
 ```
 
-<!-- #1 #str #contains  -->
+<!-- #1 #str #slicing  -->
 ```
 '''
 Aufgabe 3.12:
@@ -294,7 +294,7 @@ YES
 # your code
 ```
 
-<!-- #1 #str   -->
+<!-- #1 #split #durchlauf-->
 ```
 '''
 Aufgabe 3.13:
@@ -317,7 +317,7 @@ zu kurz
 # your code
 ```
 
-<!-- #1 #list #slice   -->
+<!-- #1 #list #slice #durchlauf -->
 ```
 '''
 Aufgabe 3.14:
@@ -421,10 +421,10 @@ Bitte eine Zahl eingeben: 2313450023
 ```
 
 
-<!-- #2 #str #list  -->
+<!-- #2 #str #list #durchlauf #convert-->
 ```
 '''
-Aufgabe 19:
+Aufgabe 3.19:
 Gib in einer Zeile eine positive ganze Zahl ein.
 Gib die Quersumme der Zahl aus.
 
@@ -441,7 +441,7 @@ Bitte eine Zahl eingeben: 1234567
 ```
 
 
-<!-- #2 #str #schleife  -->
+<!-- #2 #str #durchlauf  -->
 ```
 '''
 Aufgabe 3.20:

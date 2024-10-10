@@ -16,7 +16,7 @@ eine Liste mit den beiden Teilstrings vor und nach der Stelle k zurückgibt.
 #your code
 ```
 
-<!-- #2 #list #func #loop  -->
+<!-- #2 #list #func #durchlauf  -->
 ```
 '''
 Aufgabe 4.2:
@@ -33,7 +33,7 @@ NO
 ```
 
 
-<!-- #2 #func #str #index #loop  -->
+<!-- #2 #func #str #index   -->
 ```
 '''
 Aufgabe 4.3:
@@ -52,7 +52,7 @@ abc
 # your code
 ```
 
-<!-- #2 #func #list #loop #str  -->
+<!-- #2 #func #list #durchlauf #str  -->
 ```
 '''
 Aufgabe 4.4:
@@ -103,7 +103,7 @@ Hooollow
 # your code
 ```
 
-<!-- #2 #func #str #index #loop  -->
+<!-- #2 #func #str #index #durchlauf  -->
 ```
 '''
 Aufgabe 4.7:
@@ -209,7 +209,7 @@ den Durchschnittswert der Zahlen in a zurückgibt.
 # your code
 ```
 
-<!-- #2 #str #list #index -->
+<!-- #2 #str #list #durchlauf -->
 ```
 '''
 Aufgabe 4.13:
@@ -324,7 +324,7 @@ die den dazugehörigen String zurückgibt.
 <!-- #2 #func #ord #str  -->
 ```
 '''
-Aufgabe 19:
+Aufgabe 4.19:
 Schreibe eine Funktion func19, der ein String mit kleinen Buchstaben des englischen Alphabets 
 und ein Zeichen c übergeben werden und die die Anzahl Zeichen in s zurückgibt, die alphabetisch vor c
 vorkommen.

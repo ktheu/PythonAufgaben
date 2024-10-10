@@ -219,13 +219,37 @@ s[2:5]       # 'bic'
 s[::2]       # jedes zweite Zeichen: 'Hbct'
 s[::-1]      # den gesamten String rückwärts:  'thcibaH'
 ```
+
+```
+s.lower(), s.upper()   # alles in Klein-, Großbuchstaben
+s.replace(s1,s2)       # alle Teilstrings s1 in s2 umwandeln
+s.strip()          # entfernt vorne und hinten Leerzeichen und Seitenvorschub
+s.strip('?.!;')    # entfernt vorne und hinten die angegebenen Zeichen
+s.islower(), s.isupper() # besteht s aus Klein-, Großbuchstaben ?
+s.isalpha(), s.isdigit() # besteht s aus Buchstaben, Ziffern ?
+s.isalnum()        # besteht s nur aus Buchstaben und Ziffern?
+s.startswith(s1), s.endswith(s1) # beginnnt, endet s mit s1 ?
+s.count(s1)        # Anzahl Vorkommen von s1 in s
+s.index(s1)        # Index erstes Vorkommen s1 in s, Fehler wenn nicht da
+s.find(s1)         # Index erstes Vorkommen s1 in s, -1 wenn nicht da
+s.find(s1,i,j)     # Suche Vorkommen im Intervall [i,j)
+s1 = s.ljust(20)   # s1 beginnt links mit s, hat Länge 20, ggf. Leerzeichen rechts.
+s1 = s.rjust(20)   # analog rechts
+```
+
+```
+a = s.split()      # Trenner sind Leerzeichen (auch mehrere) und Seitenvorschub
+a = s.split(' ')   # Trenner ist einzelnes Leerzeichen 
+a = s.split(s1)    # Trenner ist s1 
+a = list(s)        # Liste aus den einzelnen Zeichen von s
+```
  
 ```
 # Hilfe
 help(str)         # alle Methoden des Strings
 help(str.count)   # Hilfe zur Methode count
 ```
-
+[W3C](https://www.w3schools.com/python/python_strings.asp)
 
 ## Listen
 
