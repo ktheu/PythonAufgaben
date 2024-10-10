@@ -81,6 +81,8 @@ Erwartete Ausgabe: 15
 -12
 10
 ```
+
+```
 '''
 Aufgabe 5.4
 Lies die Zahlen aus obigem input.txt in die Variablen a, b, c ein und gib 

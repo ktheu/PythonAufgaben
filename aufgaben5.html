@@ -187,6 +187,9 @@
 <li class="toctree-l1"><a class="reference internal" href="aufgaben3.html">Aufgaben 3</a></li>
 <li class="toctree-l1"><a class="reference internal" href="aufgaben4.html">Aufgaben 4</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Aufgaben 5</a></li>
+
+
+
 <li class="toctree-l1"><a class="reference internal" href="aufgabengruppen.html">Aufgabengruppen</a></li>
 </ul>
 
@@ -360,7 +363,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -376,6 +381,18 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Aufgaben 5</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#your-code">your code</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">your code</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">your code</a></li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -463,111 +480,129 @@ document.write(`
 <span class="mi">10</span>
 </pre></div>
 </div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">Aufgabe 5.4</span>
+<span class="sd">Lies die Zahlen aus obigem input.txt in die Variablen a, b, c ein und gib </span>
+<span class="sd">diese Variablen und ihre Summe aus.</span>
+
+<span class="sd">Erwartete Ausgabe:</span>
+<span class="sd">42 -12 10 40</span>
+<span class="sd">&#39;&#39;&#39;</span>
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>---
+&lt;!-- #2 #einlesen --&gt;
+
+</pre></div>
+</div>
+<p>3
+10
+20
+40</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
 <p>‘’’
-Aufgabe 5.4
-Lies die Zahlen aus obigem input.txt in die Variablen a, b, c ein und gib
-diese Variablen und ihre Summe aus.</p>
+Aufgabe 5.5
+Die erste Zahl gibt an, wieviele Zahlen noch folgen. Lies die Zahlen aus obigem
+input.txt in eine Liste a ein und gib diese aus.</p>
 <p>Erwartete Ausgabe:
-42 -12 10 40
+[10, 20, 40]
 ‘’’</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-<hr class="docutils" />
-<!-- #2 #einlesen -->
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="n">writefile</span> <span class="nb">input</span><span class="o">.</span><span class="n">txt</span>
-<span class="mi">3</span>
-<span class="mi">10</span>
-<span class="mi">20</span>
-<span class="mi">40</span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">Aufgabe 5.5</span>
-<span class="sd">Die erste Zahl gibt an, wieviele Zahlen noch folgen. Lies die Zahlen aus obigem</span>
-<span class="sd">input.txt in eine Liste a ein und gib diese aus.</span>
 
-<span class="sd">Erwartete Ausgabe:</span>
-<span class="sd">[10, 20, 40]</span>
-<span class="sd">&#39;&#39;&#39;</span>
-</pre></div>
-</div>
-<hr class="docutils" />
-<!-- #2 #einlesen -->
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="n">writefile</span> <span class="nb">input</span><span class="o">.</span><span class="n">txt</span>
-<span class="mi">3</span>
-<span class="n">Hallo</span> 
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">Aufgabe 5.6</span>
-<span class="sd">Lies die Zahl n und den String s aus obigem input.txt ein und gib s n-mal aus.</span>
+---- 
+&lt;!-- #2 #einlesen --&gt;
 
-<span class="sd">Erwartete Ausgabe:</span>
-<span class="sd">Hallo</span>
-<span class="sd">Hallo</span>
-<span class="sd">Hallo</span>
-<span class="sd">&#39;&#39;&#39;</span>
-<span class="c1"># your code</span>
-</pre></div>
-</div>
-<hr class="docutils" />
-<!-- #2 #einlesen -->
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">%%</span><span class="n">writefile</span> <span class="nb">input</span><span class="o">.</span><span class="n">txt</span>
-<span class="mi">3</span> <span class="mi">10</span> <span class="mi">8</span> <span class="mi">4</span> <span class="o">-</span><span class="mi">3</span> <span class="mi">14</span> <span class="mi">42</span> <span class="o">-</span><span class="mi">9</span>
-</pre></div>
-</div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">Aufgabe 5.7</span>
-<span class="sd">Alle Zahlen stehen in einer Zeile. Lies die Zahlen aus obigem input.txt in </span>
-<span class="sd">eine Liste ein und gib diese aus.</span>
 
-<span class="sd">Erwartete Ausgabe:</span>
-<span class="sd">[3, 10, 8, 4, -3, 14, 42, -9]</span>
-<span class="sd">&#39;&#39;&#39;</span>
-<span class="c1"># your code</span>
 </pre></div>
 </div>
-<hr class="docutils" />
-<!-- #2 #einlesen -->
+<p>3
+Hallo</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
-<p>In der Innenwelt des Computers werden Nullen und Einsen verschoben, verrechnet
+<p>‘’’
+Aufgabe 5.6
+Lies die Zahl n und den String s aus obigem input.txt ein und gib s n-mal aus.</p>
+<p>Erwartete Ausgabe:
+Hallo
+Hallo
+Hallo
+‘’’</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="your-code">
+<h1>your code<a class="headerlink" href="#your-code" title="Link to this heading">#</a></h1>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+
+---
+&lt;!-- #2 #einlesen --&gt;
+
+</pre></div>
+</div>
+<p>3 10 8 4 -3 14 42 -9</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<p>‘’’
+Aufgabe 5.7
+Alle Zahlen stehen in einer Zeile. Lies die Zahlen aus obigem input.txt in
+eine Liste ein und gib diese aus.</p>
+<p>Erwartete Ausgabe:
+[3, 10, 8, 4, -3, 14, 42, -9]
+‘’’</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>your code<a class="headerlink" href="#id1" title="Link to this heading">#</a></h1>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
+----
+&lt;!-- #2 #einlesen --&gt;
+
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>%%writefile input.txt
+In der Innenwelt des Computers werden Nullen und Einsen verschoben, verrechnet
 und gespeichert. Dass dies keinerlei Einschränkung bedeutet, wissen
 wir bereits: Töne, Bilder und beliebige andere Informationen lassen sich durch
-0–1-Muster codieren.</p>
+0–1-Muster codieren.
+</pre></div>
+</div>
+<p>‘’’
+Aufgabe 5.8
+Lies den Text aus input.txt in eine Variable data ein.
+Ersetze jeden Zeilenvorschub durch ein Leerzeichen und ersetze alle Umlaute:
+ä zu ae, ö zu oe, ü zu ue. Gib dann data aus.</p>
+<p>Erwartete Ausgabe:</p>
+<p>In der Innenwelt des Computers werden Nullen und Einsen verschoben, verrechnet und gespeichert. Dass dies keinerlei Einschraenkung bedeutet, wissen wir bereits: Toene, Bilder und beliebige andere Informationen lassen sich durch 0–1-Muster codieren.
+‘’’</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id2">
+<h1>your code<a class="headerlink" href="#id2" title="Link to this heading">#</a></h1>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
-<span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">Aufgabe 5.8</span>
-<span class="sd">Lies den Text aus input.txt in eine Variable data ein.</span>
-<span class="sd">Ersetze jeden Zeilenvorschub durch ein Leerzeichen und ersetze alle Umlaute:</span>
-<span class="sd">ä zu ae, ö zu oe, ü zu ue. Gib dann data aus.</span>
 
 
-<span class="sd">Erwartete Ausgabe:</span>
 
-<span class="sd">In der Innenwelt des Computers werden Nullen und Einsen verschoben, verrechnet und gespeichert. Dass dies keinerlei Einschraenkung bedeutet, wissen wir bereits: Toene, Bilder und beliebige andere Informationen lassen sich durch 0–1-Muster codieren.</span>
-<span class="sd">&#39;&#39;&#39;</span>
-<span class="c1"># your code</span>
+&lt;!-- #2 #einlesen --&gt;
+
 </pre></div>
 </div>
-<!-- #2 #einlesen -->
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>%%writefile input.txt
-Die ist ein Text. Da haben wir die Umlaute ä ö und ü. Wir testen auch das ß.
-Satzzeichen wie ?,!; sollen nicht übernommen werden.
+<p>Die ist ein Text. Da haben wir die Umlaute ä ö und ü. Wir testen auch das ß.
+Satzzeichen wie ?,!; sollen nicht übernommen werden.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
 </div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">Aufgabe 5.9</span>
-<span class="sd">Lies den Text aus dem obigen input.txt in eine Variable data0 ein.</span>
-<span class="sd">Wandle alles in Kleinbuchstaben um. In die Variabel data sollen nur die Buchstaben </span>
-<span class="sd">(auch Umlaute und ß) aus data0 übernommen werden, keine Leerzeichen,</span>
-<span class="sd">Zeilenvorschübe oder Satzzeichen. Gib data aus.</span>
+<p>‘’’
+Aufgabe 5.9
+Lies den Text aus dem obigen input.txt in eine Variable data0 ein.
+Wandle alles in Kleinbuchstaben um. In die Variabel data sollen nur die Buchstaben
+(auch Umlaute und ß) aus data0 übernommen werden, keine Leerzeichen,
+Zeilenvorschübe oder Satzzeichen. Gib data aus.</p>
+<p>Erwartete Ausgabe:
+dieisteintextdahabenwirdieumlauteäöundüwirtestenauchdasßsatzzeichenwiesollennichtübernommenwerden
+‘’’</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
 
-<span class="sd">Erwartete Ausgabe:</span>
-<span class="sd">dieisteintextdahabenwirdieumlauteäöundüwirtestenauchdasßsatzzeichenwiesollennichtübernommenwerden</span>
-<span class="sd">&#39;&#39;&#39;</span>
+
 </pre></div>
 </div>
 </section>
@@ -626,6 +661,25 @@ Satzzeichen wie ?,!; sollen nicht übernommen werden.
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Aufgaben 5</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#your-code">your code</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">your code</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">your code</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
               
             
           </div>
