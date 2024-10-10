@@ -187,7 +187,7 @@
 <li class="toctree-l1"><a class="reference internal" href="aufgaben3.html">Aufgaben 3</a></li>
 <li class="toctree-l1"><a class="reference internal" href="aufgaben4.html">Aufgaben 4</a></li>
 <li class="toctree-l1"><a class="reference internal" href="aufgaben5.html">Aufgaben 5</a></li>
-<li class="toctree-l1"><a class="reference internal" href="themen.html">Aufgabengruppen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aufgabengruppen.html">Aufgabengruppen</a></li>
 </ul>
 
     </div>
@@ -651,14 +651,18 @@ document.write(`
 </pre></div>
 </div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="ow">in</span> <span class="n">a</span><span class="p">,</span> <span class="n">x</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">a</span>   <span class="c1"># Element x in Liste a vorhanden?</span>
-<span class="n">a</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>    <span class="c1"># Anzahl Vorkommen von x in a </span>
-<span class="n">a</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>    <span class="c1"># Index des ersten Vorkommens von x, Fehler wenn nicht vorhanden</span>
+<span class="n">k</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="c1"># Anzahl Vorkommen von x in a </span>
+<span class="n">i</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="c1"># Index des ersten Vorkommens von x, Fehler wenn nicht vorhanden</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>   <span class="c1"># Entfernt und gibt zurück letztes Element von a </span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>  <span class="c1"># Entfernt und gibt zurück Element mit Index 3</span>
 <span class="k">del</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>     <span class="c1"># Entfernt Element mit Index 3 aus a  </span>
 <span class="n">a</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>   <span class="c1"># Entfernt erstes Vorkommen von x in a, Fehler wenn nicht vorhanden</span>
 <span class="n">a</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span> <span class="c1"># Fügt x bei Index i ein, Rest rückt nach hinten.</span>
 <span class="n">a</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>   <span class="c1"># Reihenfolge umdrehen</span>
+<span class="n">a</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>      <span class="c1"># Liste sortieren (falls möglich)</span>
+<span class="n">a</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>   <span class="c1"># absteigend sortieren</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>  <span class="c1"># (flache) Kopie der Liste erstellen</span>
+<span class="n">a</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>     <span class="c1"># Liste leeren</span>
 </pre></div>
 </div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>          <span class="c1">#  Methoden der Liste</span>
