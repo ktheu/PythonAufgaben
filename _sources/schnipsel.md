@@ -252,12 +252,19 @@ a[::2]        # jedes 2. Element
 x in a, x not in a   # Element x in Liste a vorhanden?
 a.count(x)    # Anzahl Vorkommen von x in a 
 a.index(x)    # Index des ersten Vorkommens von x, Fehler wenn nicht vorhanden
+x = a.pop()   # Entfernt und gibt zurück letztes Element von a 
+x = a.pop(3)  # Entfernt und gibt zurück Element mit Index 3
+del(a[3])     # Entfernt Element mit Index 3 aus a  
+a.remove(x)   # Entfernt erstes Vorkommen von x in a, Fehler wenn nicht vorhanden
+a.insert(i, x) # Fügt x bei Index i ein, Rest rückt nach hinten.
+a.reverse()   # Reihenfolge umdrehen
 ```
 
 ```
-help(list)         #  Methoden der Liste
+help(list)          #  Methoden der Liste
 help(list.insert)   #  Hilfe zur Listenmethode insert
 ```
+[W3C](https://www.w3schools.com/python/python_lists.asp)
 
 
 ## Dictionaries

@@ -653,12 +653,19 @@ document.write(`
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="ow">in</span> <span class="n">a</span><span class="p">,</span> <span class="n">x</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">a</span>   <span class="c1"># Element x in Liste a vorhanden?</span>
 <span class="n">a</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>    <span class="c1"># Anzahl Vorkommen von x in a </span>
 <span class="n">a</span><span class="o">.</span><span class="n">index</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>    <span class="c1"># Index des ersten Vorkommens von x, Fehler wenn nicht vorhanden</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>   <span class="c1"># Entfernt und gibt zurück letztes Element von a </span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">a</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>  <span class="c1"># Entfernt und gibt zurück Element mit Index 3</span>
+<span class="k">del</span><span class="p">(</span><span class="n">a</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>     <span class="c1"># Entfernt Element mit Index 3 aus a  </span>
+<span class="n">a</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>   <span class="c1"># Entfernt erstes Vorkommen von x in a, Fehler wenn nicht vorhanden</span>
+<span class="n">a</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span> <span class="c1"># Fügt x bei Index i ein, Rest rückt nach hinten.</span>
+<span class="n">a</span><span class="o">.</span><span class="n">reverse</span><span class="p">()</span>   <span class="c1"># Reihenfolge umdrehen</span>
 </pre></div>
 </div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>         <span class="c1">#  Methoden der Liste</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="nb">list</span><span class="p">)</span>          <span class="c1">#  Methoden der Liste</span>
 <span class="n">help</span><span class="p">(</span><span class="nb">list</span><span class="o">.</span><span class="n">insert</span><span class="p">)</span>   <span class="c1">#  Hilfe zur Listenmethode insert</span>
 </pre></div>
 </div>
+<p><a class="reference external" href="https://www.w3schools.com/python/python_lists.asp">W3C</a></p>
 </section>
 <section id="dictionaries">
 <h2>Dictionaries<a class="headerlink" href="#dictionaries" title="Link to this heading">#</a></h2>
