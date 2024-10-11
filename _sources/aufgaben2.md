@@ -86,8 +86,8 @@ NO
 ```
 '''
 Aufgabe 2.5:
-Lies einen String s ein. Wenn die Länge von s größer als 2 ist und das letzte Zeichen 'a' oder 'o' ist
-gib 'YES' aus, sonst 'NO'
+Lies einen String s ein. Wenn die Länge von s größer als 2 ist und das
+ letzte Zeichen 'a' oder 'o' ist gib 'YES' aus, sonst 'NO'
 
 Beispieldialoge:
 
