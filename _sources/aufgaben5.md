@@ -72,16 +72,13 @@ Erwartete Ausgabe: 15
 # your code
 ```
 
-
 <!-- #2 #einlesen -->
- 
 ```
 %%writefile input.txt
 42
 -12
 10
 ```
-
 ```
 '''
 Aufgabe 5.4
@@ -91,12 +88,10 @@ diese Variablen und ihre Summe aus.
 Erwartete Ausgabe:
 42 -12 10 40
 '''
+# your code
 ```
 
-```
----
 <!-- #2 #einlesen -->
-
 ```
 %%writefile input.txt
 3
@@ -104,7 +99,6 @@ Erwartete Ausgabe:
 20
 40
 ```
-
 ```
 '''
 Aufgabe 5.5
@@ -114,19 +108,15 @@ input.txt in eine Liste a ein und gib diese aus.
 Erwartete Ausgabe:
 [10, 20, 40]
 '''
+# your code
 ```
 
-
----- 
 <!-- #2 #einlesen -->
-
-
 ```
 %%writefile input.txt
 3
 Hallo 
 ```
-
 ```
 '''
 Aufgabe 5.6
@@ -140,15 +130,12 @@ Hallo
 # your code
 ```
 
-
----
 <!-- #2 #einlesen -->
 
 ```
 %%writefile input.txt
 3 10 8 4 -3 14 42 -9
 ```
-
 ```
 '''
 Aufgabe 5.7
@@ -161,10 +148,7 @@ Erwartete Ausgabe:
 # your code
 ```
 
-----
 <!-- #2 #einlesen -->
-
-```
 ```
 %%writefile input.txt
 In der Innenwelt des Computers werden Nullen und Einsen verschoben, verrechnet
@@ -172,10 +156,10 @@ und gespeichert. Dass dies keinerlei Einschränkung bedeutet, wissen
 wir bereits: Töne, Bilder und beliebige andere Informationen lassen sich durch
 0–1-Muster codieren.
 ```
-
+```
 '''
 Aufgabe 5.8
-Lies den Text aus input.txt in eine Variable data ein.
+Lies den Text aus dem obigen input.txt in eine Variable data ein.
 Ersetze jeden Zeilenvorschub durch ein Leerzeichen und ersetze alle Umlaute:
 ä zu ae, ö zu oe, ü zu ue. Gib dann data aus.
 
@@ -208,6 +192,23 @@ Zeilenvorschübe oder Satzzeichen. Gib data aus.
 
 Erwartete Ausgabe:
 dieisteintextdahabenwirdieumlauteäöundüwirtestenauchdasßsatzzeichenwiesollennichtübernommenwerden
+'''
+```
+
+```
+'''
+Aufgabe 5.10
+Erstelle ein dictionary m, das jedem kleinen Buchstaben seine Stelle im Alphabet zuordnet.
+a -> 1, b -> 2, ... z -> 26. 
+Erweitere das dict um folgende Einträge: ä -> 27, ö -> 28, ü -> 29, ß -> 30.
+
+Teste ein paar Werte:
+>>> m['c']
+3
+>>> m['o']
+15
+>>> m['ö']
+28
 '''
 ```
 

@@ -187,9 +187,6 @@
 <li class="toctree-l1"><a class="reference internal" href="../aufgaben3.html">Aufgaben 3</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../aufgaben4.html">Aufgaben 4</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../aufgaben5.html">Aufgaben 5</a></li>
-
-
-
 <li class="toctree-l1"><a class="reference internal" href="../aufgabengruppen.html">Aufgabengruppen</a></li>
 </ul>
 
@@ -407,7 +404,7 @@ document.write(`
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
-<span class="sd">Aufgabe 5.10</span>
+<span class="sd">Aufgabe 5.9</span>
 <span class="sd">Lies den Text aus dem obigen input.txt in eine Variable data0 ein.</span>
 <span class="sd">Wandle alles in Kleinbuchstaben um. In die Variabel data sollen nur die Buchstaben </span>
 <span class="sd">(auch Umlaute und ß) aus data0 übernommen werden, keine Leerzeichen,</span>
@@ -432,6 +429,54 @@ document.write(`
 </div>
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>dieisteintextdahabenwirdieumlauteäöundüwirtestenauchdasßsatzzeichenwiesollennichtübernommenwerden
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">Aufgabe 5.10</span>
+<span class="sd">Erstelle ein dictionary m, das jedem kleinen Buchstaben seine Stelle im Alphabet zuordnet.</span>
+<span class="sd">a -&gt; 1, b -&gt; 2, ... z -&gt; 26. </span>
+<span class="sd">Erweitere das dict um folgende Einträge: ä -&gt; 27, ö -&gt; 28, ü -&gt; 29, ß -&gt; 30.</span>
+
+<span class="sd">Teste ein paar Werte:</span>
+<span class="sd">&gt;&gt;&gt; m[&#39;c&#39;]</span>
+<span class="sd">3</span>
+<span class="sd">&gt;&gt;&gt; m[&#39;o&#39;]</span>
+<span class="sd">15</span>
+<span class="sd">&gt;&gt;&gt; m[&#39;ö&#39;]</span>
+<span class="sd">28</span>
+<span class="sd">&#39;&#39;&#39;</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&quot;\nAufgabe 5.10\nErstelle ein dictionary m, das jedem kleinen Buchstaben seine Stelle im Alphabet zuordnet.\na -&gt; 1, b -&gt; 2, ... z -&gt; 26. \nErweitere das dict um folgende Einträge: ä -&gt; 27, ö -&gt; 28, ü -&gt; 29, ß -&gt; 30.\n\nTeste ein paar Werte:\n&gt;&gt;&gt; m[&#39;c&#39;]\n3\n&gt;&gt;&gt; m[&#39;o&#39;]\n15\n&gt;&gt;&gt; m[&#39;ö&#39;]\n28\n&quot;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m</span> <span class="o">=</span> <span class="p">{</span><span class="nb">chr</span><span class="p">(</span><span class="mi">97</span><span class="o">+</span><span class="n">i</span><span class="p">):</span> <span class="n">i</span><span class="o">+</span><span class="mi">1</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">26</span><span class="p">)}</span>
+<span class="n">m</span><span class="p">[</span><span class="s1">&#39;ä&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">27</span>
+<span class="n">m</span><span class="p">[</span><span class="s1">&#39;ö&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">28</span>
+<span class="n">m</span><span class="p">[</span><span class="s1">&#39;ü&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">29</span>
+<span class="n">m</span><span class="p">[</span><span class="s1">&#39;ß&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">30</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m</span><span class="p">[</span><span class="s1">&#39;ö&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>28
 </pre></div>
 </div>
 </div>
