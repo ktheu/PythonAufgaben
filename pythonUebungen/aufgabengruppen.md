@@ -6,6 +6,12 @@ Aufgaben zu bestimmten Themen
 Aufgaben 1, 2
 ```
 
+## Listen oder Strings durchlaufen
+```
+3.8-3.11, 3.13, 3.14, 3.19, 3.20
+4.2, 4.4, 4.13
+```
+
 ## Dictionaries
 ```
 2.13, 2.14, 2.15
@@ -14,8 +20,19 @@ Aufgaben 1, 2
 
 ## Einlesen von Daten
 ```
-5.3 - 5.10
+5.4 - 5.9
 ```
+
+## J1
+```
+5.9, 5.10
+```
+
+## J2
+```
+
+```
+
 
 
 
