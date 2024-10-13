@@ -186,7 +186,7 @@ Satzzeichen wie ?,!; sollen nicht übernommen werden.
 '''
 Aufgabe 5.9
 Lies den Text aus dem obigen input.txt in eine Variable data0 ein.
-Wandle alles in Kleinbuchstaben um. In die Variabel data sollen nur die Buchstaben 
+Wandle alles in Kleinbuchstaben um. In die Variable data sollen nur die Buchstaben 
 (auch Umlaute und ß) aus data0 übernommen werden, keine Leerzeichen,
 Zeilenvorschübe oder Satzzeichen. Gib data aus.
 
