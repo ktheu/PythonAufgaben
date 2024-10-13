@@ -186,7 +186,7 @@ Satzzeichen wie ?,!; sollen nicht übernommen werden.
 '''
 Aufgabe 5.9
 Lies den Text aus dem obigen input.txt in eine Variable data0 ein.
-Wandle alles in Kleinbuchstaben um. In die Variabel data sollen nur die Buchstaben 
+Wandle alles in Kleinbuchstaben um. In die Variable data sollen nur die Buchstaben 
 (auch Umlaute und ß) aus data0 übernommen werden, keine Leerzeichen,
 Zeilenvorschübe oder Satzzeichen. Gib data aus.
 
@@ -212,5 +212,62 @@ Teste ein paar Werte:
 '''
 ```
 
+<!-- #2 #Jwinf -->
+```
+'''
+Aufgabe 5.11
+Lies eine positive ganze Zahl ein und gib alle Möglichkeiten aus, wie diese
+Zahl durch eine Multiplikation zweier ganzer positiver Zahlen erreicht werden kann.
+
+Beispieldialoge:
+
+Bitte eine Zahl eingeben: 49
+49 = 1 * 49
+49 = 7 * 7
+49 = 49 * 1
+
+Bitte eine Zahl eingeben: 30
+30 = 1 * 30
+30 = 2 * 15
+30 = 3 * 10
+30 = 5 * 6
+30 = 6 * 5
+30 = 10 * 3
+30 = 15 * 2
+30 = 30 * 1
+''' 
+```
+
+<!-- #2 #Jwinf -->
+
+```
+'''
+Aufgabe 5.12 (siehe auch 5.11)
+Schreibe eine Funktion func, der eine positive ganze Zahl übergeben wird 
+und die eine Liste zurückgibt mit allen Möglichkeiten, wie diese
+Zahl durch eine Multiplikation zweier ganzer positiver Zahlen erreicht kann.
+
+>>> func(49)
+[[1, 49], [7, 7], [49, 1]]
+
+>>> func(30)
+[[1, 30], [2, 15], [3, 10], [5, 6], [6, 5], [10, 3], [15, 2], [30, 1]]
+''' 
+```
+
+<!-- #2 #Jwinf -->
+```
+'''
+Aufgabe 5.13
+Schreibe eine Funktion func, der eine Liste a mit Zahlen übergeben wird und die
+die Zahl zurückgibt, die zu 1 den kleinsten Abstand hat.
+
+>>> func([2.4, 1.3, 0.9, -1])
+0.9
+
+>>> func([6.1, 11, -1.2, 23, 19.6])
+-1.2
+''' 
+```
 
 

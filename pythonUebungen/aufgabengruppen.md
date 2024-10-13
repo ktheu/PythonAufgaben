@@ -6,6 +6,11 @@ Aufgaben zu bestimmten Themen
 Aufgaben 1, 2
 ```
 
+## Listen1
+```
+2.6, 2.7, 2.8, 2.9, 2.10, 2.11, 2.12
+```
+
 ## Listen oder Strings durchlaufen
 ```
 3.8-3.11, 3.13, 3.14, 3.19, 3.20
@@ -23,15 +28,17 @@ Aufgaben 1, 2
 5.4 - 5.9
 ```
 
-## J1
+## Junioraufgabe1
+```
+5.4, 5.11, 5.12, 5.13
+```
+
+## Junioraufgabe2
 ```
 5.9, 5.10
 ```
 
-## J2
-```
 
-```
 
 
 
