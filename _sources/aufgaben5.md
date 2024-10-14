@@ -193,6 +193,7 @@ Zeilenvorschübe oder Satzzeichen. Gib data aus.
 Erwartete Ausgabe:
 dieisteintextdahabenwirdieumlauteäöundüwirtestenauchdasßsatzzeichenwiesollennichtübernommenwerden
 '''
+# your code
 ```
 
 ```
@@ -210,6 +211,7 @@ Teste ein paar Werte:
 >>> m['ö']
 28
 '''
+# your code
 ```
 
 <!-- #2 #Jwinf -->
@@ -236,6 +238,7 @@ Bitte eine Zahl eingeben: 30
 30 = 15 * 2
 30 = 30 * 1
 ''' 
+# your code
 ```
 
 <!-- #2 #Jwinf -->
@@ -253,6 +256,7 @@ Zahl durch eine Multiplikation zweier ganzer positiver Zahlen erreicht kann.
 >>> func(30)
 [[1, 30], [2, 15], [3, 10], [5, 6], [6, 5], [10, 3], [15, 2], [30, 1]]
 ''' 
+# your code
 ```
 
 <!-- #2 #Jwinf -->
@@ -268,6 +272,67 @@ die Zahl zurückgibt, die zu 1 den kleinsten Abstand hat.
 >>> func([6.1, 11, -1.2, 23, 19.6])
 -1.2
 ''' 
+# your code
 ```
 
+<!-- #2 #collatz -->
+```
+'''
+Aufgabe 5.14
+Schreibe eine Funktion collatz, der eine positive ganze Zahl übergeben wird und
+die das Ergebnis und die Zwischenschritte des Collatz-Algorithmus ausgibt.
+(Diese Funktion soll also etwas printen und nichts zurückgeben).
 
+>>> collatz(17)
+17 52 26 13 40 20 10 5 16 8 4 2 1 
+Ergebnis des Collatz-Algorithmus: 12
+
+>>> collatz(23)
+23 70 35 106 53 160 80 40 20 10 5 16 8 4 2 1 
+Ergebnis des Collatz-Algorithmus: 15
+''' 
+# your code
+```
+
+<!-- #2 #list #durchlauf -->
+```
+'''
+Aufgabe 5.16
+Schreibe eine Funktion func, der eine Liste a mit Zahlen übergeben wird
+und die die Summe aller Zahlen zurückgibt. Nutze nicht die eingebaute Funktion sum
+sondern gehe mit einer Schleife durch die Liste.
+
+>>> func([1,2,3,4])
+10
+ 
+>>> func([10])
+10
+
+>>> func([])
+0
+''' 
+# your code
+```
+
+<!-- #2 #list #durchlauf -->
+```
+'''
+Aufgabe 5.17
+Schreibe eine Funktion func, der eine Liste a mit ganzen Zahlen übergeben wird
+und die zurückgibt, wieviele ungerade Zahlen in der Liste vorkommen.
+
+>>> func([1,2,3,4,5])
+3
+ 
+>>> func([2,4,6,8,10])
+0
+
+>>> func([])
+0
+''' 
+# your code
+```
+
+<!-- #2 #Jwinf -->
+```
+```
