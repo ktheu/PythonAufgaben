@@ -333,6 +333,75 @@ und die zurückgibt, wieviele ungerade Zahlen in der Liste vorkommen.
 # your code
 ```
 
-<!-- #2 #Jwinf -->
+<!-- #2 #list #durchlauf -->
 ```
+'''
+Aufgabe 5.18
+Schreibe eine Funktion func, der eine Liste a mit ganzen Zahlen übergeben wird
+und die eine Liste b mit den akkumulierten Teilsummen zurückgibt, d.h. 
+b[k] ist Summe von a[0] bis a[k].
+
+>>> func([1,1,1,1,1])
+[1, 2, 3, 4, 5]
+ 
+>>> func([1,2,3,4,5])
+[1, 3, 6, 10, 15]
+
+>>> func([])
+[]
+''' 
+# your code
 ```
+
+<!-- #2 #list durchlauf -->
+```
+'''
+Aufgabe 5.19 
+Schreibe eine Funktion func, der eine Liste a mit (mindestens 2) ganzen Zahlen übergeben wird
+und die eine Liste b zurückgibt die aus a entsteht, indem jedes Element von a
+um seinen Nachfolger erhöht wird (das das letzte Element wird nicht berücksichtigt).
+ 
+>>> func([1,5,3,10,5])
+[6, 8, 13, 15]
+
+>>> func([1,10])
+[11]
+''' 
+# your code
+```
+
+<!-- #2 #list #durchlauf -->
+```
+'''
+Aufgabe 5.20 
+Schreibe eine Funktion func, der eine Liste a mit (mindestens 2) Zahlen übergeben wird
+und die zählt, wieviele Zahlen in a einen kleineren Vorgänger haben.
+ 
+>>> func([1,5,3,10,5])
+2
+
+>>> func([2,2,2])
+0
+''' 
+# your code
+```
+
+<!-- #2 #list #durchlauf -->
+```
+'''
+Aufgabe 5.21
+Schreibe eine Funktion func, der eine Liste a mit (mindestens 3) Zahlen übergeben wird
+und die zählt, wieviele der inneren Zahlen zwischen zwei größeren Zahl stehen.
+ 
+>>> func([5,1,5])
+1
+
+>>> func([5,1,1,5])
+0
+
+>>> func([5,1,7,5,9,2,0,6])
+3
+''' 
+# your code
+```
+
