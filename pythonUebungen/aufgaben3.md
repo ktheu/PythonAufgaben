@@ -317,7 +317,7 @@ zu kurz
 # your code
 ```
 
-<!-- #1 #list #slice #durchlauf -->
+<!-- #1 #list #slice -->
 ```
 '''
 Aufgabe 3.14:
@@ -421,7 +421,7 @@ Bitte eine Zahl eingeben: 2313450023
 ```
 
 
-<!-- #2 #str #list #durchlauf #convert-->
+<!-- #2 #str #list #convert-->
 ```
 '''
 Aufgabe 3.19:
