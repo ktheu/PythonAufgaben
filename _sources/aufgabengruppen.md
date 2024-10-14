@@ -13,7 +13,12 @@ Aufgaben 1, 2
 
 ## Listen durchlaufen
 ```
-4.2, 4.4, 4.13
+4.2, 4.4, 4.13, 5.16, 5.17, 5.18, 5.19, 5.20, 5.21
+```
+
+## lineare Suche
+```
+6.1, 6.2, 6.3, 6.4
 ```
 
 ## Strings durchlaufen
