@@ -353,7 +353,7 @@ b[k] ist Summe von a[0] bis a[k].
 # your code
 ```
 
-<!-- #2 #list durchlauf -->
+<!-- #2 #list #durchlauf -->
 ```
 '''
 Aufgabe 5.19 
@@ -391,7 +391,7 @@ und die zählt, wieviele Zahlen in a einen kleineren Vorgänger haben.
 '''
 Aufgabe 5.21
 Schreibe eine Funktion func, der eine Liste a mit (mindestens 3) Zahlen übergeben wird
-und die zählt, wieviele der inneren Zahlen zwischen zwei größeren Zahl stehen.
+und die zählt, wieviele der inneren Zahlen zwischen zwei größeren Zahlen stehen.
  
 >>> func([5,1,5])
 1
