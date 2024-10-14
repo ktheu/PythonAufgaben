@@ -8,6 +8,7 @@ benennen.
 #slicing   - Slicing bei Strings oder Listen
 #split     - String in Liste splitten
 #convert   - Konversionen int, float, str
+#lineareSuche - Lineare Suche
 
 
 

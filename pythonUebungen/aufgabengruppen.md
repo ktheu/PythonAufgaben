@@ -11,10 +11,14 @@ Aufgaben 1, 2
 2.6, 2.7, 2.8, 2.9, 2.10, 2.11, 2.12
 ```
 
-## Listen oder Strings durchlaufen
+## Listen durchlaufen
+```
+4.2, 4.4, 4.13
+```
+
+## Strings durchlaufen
 ```
 3.8-3.11, 3.13, 3.14, 3.19, 3.20
-4.2, 4.4, 4.13
 ```
 
 ## Dictionaries
