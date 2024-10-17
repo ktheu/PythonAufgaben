@@ -306,7 +306,7 @@ k not in m    # k kein Schlüssel in m?
 len(m)        # Anzahl Einträge in m
 del m['b']    # löscht Eintrag mit Schlüssel 'b'  
 v = m.pop(k)  # löscht Eintrag mit Schlüssel k und gibt value v zurück
-m.update(m1)  # aktualisiert werte und fügt ggf neue hinzu 
+m.update(m1)  # aktualisiert Einträge und fügt ggf neue hinzu 
 
 # durch ein dict laufen und die key-value Paare ausgeben
 for k in m:            # durch alle keys von m laufen
