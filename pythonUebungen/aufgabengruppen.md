@@ -11,12 +11,22 @@ Aufgaben 1, 2
 2.6, 2.7, 2.8, 2.9, 2.10, 2.11, 2.12
 ```
 
-## Listen durchlaufen
+## Listen durchlaufen (ohne Funktionen)
+```
+7.1-7.18
+```
+
+## Lineare Suche (ohne Funktionen)
+```
+7.19-7.25
+```
+
+## Listen durchlaufen (mit Funktionen)
 ```
 4.2, 4.4, 4.13, 5.16, 5.17, 5.18, 5.19, 5.20, 5.21
 ```
 
-## Lineare Suche
+## Lineare Suche (mit Funktionen)
 ```
 6.1, 6.2, 6.3, 6.4
 ```
