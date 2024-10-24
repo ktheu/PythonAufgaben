@@ -36,7 +36,7 @@ def showTags(tags):
                         print(f'{zeile2:10s} {zeile}')  
 
 
-showTags('lineareSuche list')
+showTags('func')
 
     
 

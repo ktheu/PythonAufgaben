@@ -9,6 +9,7 @@ benennen.
 #split     - String in Liste splitten
 #convert   - Konversionen int, float, str
 #lineareSuche - Lineare Suche
+#efunc     - einfache Funktionen
 
 
 

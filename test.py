@@ -1,3 +1,9 @@
-import random
+def zeichen(s, k=3):
+    '''
+    s: String
+    k: int
+    returns: s k-mal hintereinander
+    '''
+    return s * k
 
-f = open('pythonUebungen/aufgaben1.md', 'r',encoding='utf-8')
+print(zeichen('Hallo',4))
