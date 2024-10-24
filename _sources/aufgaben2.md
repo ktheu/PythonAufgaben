@@ -297,7 +297,7 @@ Bitte zwei Zahlen eingeben: 5 12
 ```
 
 
-<!-- #1 #func   -->
+<!-- #1 #efunc   -->
 
 ```
 '''    
@@ -316,7 +316,7 @@ die das Quadrat dieser Zahl zurückgibt.
 ```
 
 
-<!-- #1 #str   -->
+<!-- #1 #efunc #str   -->
 
 ```
 '''    
@@ -334,7 +334,7 @@ die das Doppelte der Summe der beiden Zahlen zurückgibt.
 # your code
 ```
 
-<!-- #1 #func   -->
+<!-- #1 #efunc   -->
 
 ```
 '''    
@@ -352,7 +352,7 @@ die das Dreifache der kleineren Zahl zurückgibt.
 # your code
 ```
 
-<!-- #1 #func #list   -->
+<!-- #1 #efunc #list   -->
 
 ```
 '''
@@ -369,7 +369,7 @@ True
 # your code
 ```
 
-<!-- #1 #func #list   -->
+<!-- #1 #efunc #list   -->
 
 ```
 '''

@@ -397,6 +397,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#schleifen">Schleifen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strings">Strings</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#listen">Listen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tuples">Tuples</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dictionaries">Dictionaries</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sets">Sets</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funktionen">Funktionen</a></li>
@@ -454,6 +455,7 @@ document.write(`
 <span class="n">s</span> <span class="o">=</span> <span class="s1">&#39;Hallo&#39;</span>  <span class="c1"># Zuweisung eines Strings mit einfachen</span>
 <span class="n">s1</span> <span class="o">=</span> <span class="s2">&quot;Welt&quot;</span>  <span class="c1">#    oder doppelten Hochkommata</span>
 <span class="n">b</span> <span class="o">=</span> <span class="kc">True</span>     <span class="c1"># True/False sind boolesche Werte (Wahrheitswerte)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="kc">None</span>     <span class="c1"># Die Variable wird definiert, bekommt aber keinen Wert zugewiesen</span>
 </pre></div>
 </div>
 <p>Kurzformen für spezielle Zuweisungen</p>
@@ -667,6 +669,11 @@ document.write(`
 <span class="n">a</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>   <span class="c1"># [1,2,3,4]   ein Element hinten an die Liste einfügen.</span>
 </pre></div>
 </div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Unpacking </span>
+<span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="n">a</span>   <span class="c1"># Die einzelnen Werte werden den Variablen zugewiesen</span>
+</pre></div>
+</div>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Slicing</span>
 <span class="n">a</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">]</span>        <span class="c1"># Teilliste von Index 1 bis ausschließlich Index 3  </span>
 <span class="n">a</span><span class="p">[</span><span class="mi">3</span><span class="p">:]</span>         <span class="c1"># Teilliste ab Index 3 bis Ende </span>
@@ -695,6 +702,21 @@ document.write(`
 </pre></div>
 </div>
 <p><a class="reference external" href="https://www.w3schools.com/python/python_lists.asp">W3C</a></p>
+</section>
+<section id="tuples">
+<h2>Tuples<a class="headerlink" href="#tuples" title="Link to this heading">#</a></h2>
+<p>Wie Listen, aber nicht veränderbar</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">t</span> <span class="o">=</span> <span class="p">()</span>              <span class="c1"># leeres Tupel</span>
+<span class="n">t</span> <span class="o">=</span> <span class="p">(</span><span class="mi">3</span><span class="p">,)</span>            <span class="c1"># Tupel mit einem Element (Komma unterscheidet von geklammerter 3)</span>
+<span class="n">t</span> <span class="o">=</span> <span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">9</span><span class="p">)</span>         <span class="c1"># Tupel mit drei Elementen</span>
+</pre></div>
+</div>
+<p>Indexing, slicing, Schleifen, x in t, unpacking, len, min, max etc. wie bei Listen</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">t</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>        <span class="c1"># Liste in Tupel umwandeln</span>
+<span class="n">a</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">t</span><span class="p">)</span>         <span class="c1"># Tupel in Liste umwandeln</span>
+</pre></div>
+</div>
 </section>
 <section id="dictionaries">
 <h2>Dictionaries<a class="headerlink" href="#dictionaries" title="Link to this heading">#</a></h2>
@@ -736,8 +758,13 @@ document.write(`
 </section>
 <section id="funktionen">
 <h2>Funktionen<a class="headerlink" href="#funktionen" title="Link to this heading">#</a></h2>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="n">y</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">zeichen</span><span class="p">(</span><span class="n">s</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">3</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    s: String</span>
+<span class="sd">    k: int</span>
+<span class="sd">    returns: s k-mal hintereinander</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="k">return</span> <span class="n">s</span> <span class="o">*</span> <span class="n">k</span>
 
 </pre></div>
 </div>
@@ -871,6 +898,7 @@ auf mehrere Zeilen verteilen.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#schleifen">Schleifen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#strings">Strings</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#listen">Listen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tuples">Tuples</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dictionaries">Dictionaries</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sets">Sets</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funktionen">Funktionen</a></li>

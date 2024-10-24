@@ -42,6 +42,7 @@ x = 2.6      # Zuweisung eines float (Dezimalzahl)
 s = 'Hallo'  # Zuweisung eines Strings mit einfachen
 s1 = "Welt"  #    oder doppelten Hochkommata
 b = True     # True/False sind boolesche Werte (Wahrheitswerte)
+y = None     # Die Variable wird definiert, bekommt aber keinen Wert zugewiesen
 ```
 
 Kurzformen für spezielle Zuweisungen
@@ -264,6 +265,12 @@ a.append(4)   # [1,2,3,4]   ein Element hinten an die Liste einfügen.
 ```
 
 ```
+# Unpacking 
+a = [1, 2, 3]
+x, y, z = a   # Die einzelnen Werte werden den Variablen zugewiesen
+```
+
+```
 # Slicing
 a[1:3]        # Teilliste von Index 1 bis ausschließlich Index 3  
 a[3:]         # Teilliste ab Index 3 bis Ende 
@@ -294,6 +301,19 @@ help(list.insert)   #  Hilfe zur Listenmethode insert
 ```
 [W3C](https://www.w3schools.com/python/python_lists.asp)
 
+## Tuples
+Wie Listen, aber nicht veränderbar
+```
+t = ()              # leeres Tupel
+t = (3,)            # Tupel mit einem Element (Komma unterscheidet von geklammerter 3)
+t = (4,2,9)         # Tupel mit drei Elementen
+```
+Indexing, slicing, Schleifen, x in t, unpacking, len, min, max etc. wie bei Listen 
+```
+a = [1,2,3]
+t = tuple(a)        # Liste in Tupel umwandeln
+a = list(t)         # Tupel in Liste umwandeln
+```
 
 ## Dictionaries
 ```
@@ -333,8 +353,13 @@ s - t, s ^ t        # Differenz, Entweder-Oder
 
 ## Funktionen
 ```
-def add(x, y):
-    return x + y
+def zeichen(s, k=3):
+    '''
+    s: String
+    k: int
+    returns: s k-mal hintereinander
+    '''
+    return s * k
 
 ```
 
