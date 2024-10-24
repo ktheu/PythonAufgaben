@@ -377,6 +377,20 @@ random.shuffle(a)     # mischt die Elemente der Liste a
 random.sample(a, 2)   # 2 zufällige Elemente aus Liste a
 ```
 
+## Das Unendliche
+Das Unendliche nutzen wir, wenn wir eine maximal große oder maximal kleine Zahl benötigen. Es gelten nicht alle Rechengesetze, aber es funktionieren die Vergleiche mit endlichen Zahlen und einige Eigenschaften, die man vom Unendlichen erwarten würde.
+```
+inf = float('inf')   
+x < inf        # True, für jede Zahl x ungleich inf
+-inf < x       # True für jede Zahl x ungleich -inf
+
+# weitere Eigenschaften von inf
+inf + 10000 == inf   # True
+inf - 10000 == inf   # True
+inf + inf == inf     # True
+inf - inf            # nan  = not a number 
+```
+
 ## Einlesen von Dateien
 
 ```

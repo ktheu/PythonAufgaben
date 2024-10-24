@@ -402,6 +402,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sets">Sets</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funktionen">Funktionen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zufall">Zufall</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#das-unendliche">Das Unendliche</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#einlesen-von-dateien">Einlesen von Dateien</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fortsetzungszeichen">Fortsetzungszeichen</a></li>
 </ul>
@@ -784,6 +785,21 @@ document.write(`
 </pre></div>
 </div>
 </section>
+<section id="das-unendliche">
+<h2>Das Unendliche<a class="headerlink" href="#das-unendliche" title="Link to this heading">#</a></h2>
+<p>Das Unendliche nutzen wir, wenn wir eine maximal große oder maximal kleine Zahl benötigen. Es gelten nicht alle Rechengesetze, aber es funktionieren die Vergleiche mit endlichen Zahlen und einige Eigenschaften, die man vom Unendlichen erwarten würde.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">inf</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="s1">&#39;inf&#39;</span><span class="p">)</span>   
+<span class="n">x</span> <span class="o">&lt;</span> <span class="n">inf</span>        <span class="c1"># True, für jede Zahl x ungleich inf</span>
+<span class="o">-</span><span class="n">inf</span> <span class="o">&lt;</span> <span class="n">x</span>       <span class="c1"># True für jede Zahl x ungleich -inf</span>
+
+<span class="c1"># weitere Eigenschaften von inf</span>
+<span class="n">inf</span> <span class="o">+</span> <span class="mi">10000</span> <span class="o">==</span> <span class="n">inf</span>   <span class="c1"># True</span>
+<span class="n">inf</span> <span class="o">-</span> <span class="mi">10000</span> <span class="o">==</span> <span class="n">inf</span>   <span class="c1"># True</span>
+<span class="n">inf</span> <span class="o">+</span> <span class="n">inf</span> <span class="o">==</span> <span class="n">inf</span>     <span class="c1"># True</span>
+<span class="n">inf</span> <span class="o">-</span> <span class="n">inf</span>            <span class="c1"># nan  = not a number </span>
+</pre></div>
+</div>
+</section>
 <section id="einlesen-von-dateien">
 <h2>Einlesen von Dateien<a class="headerlink" href="#einlesen-von-dateien" title="Link to this heading">#</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;input.txt&#39;</span><span class="p">)</span>
@@ -903,6 +919,7 @@ auf mehrere Zeilen verteilen.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sets">Sets</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#funktionen">Funktionen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#zufall">Zufall</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#das-unendliche">Das Unendliche</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#einlesen-von-dateien">Einlesen von Dateien</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fortsetzungszeichen">Fortsetzungszeichen</a></li>
 </ul>
