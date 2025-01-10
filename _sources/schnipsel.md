@@ -57,6 +57,12 @@ x = None            # es wurde noch kein Wert zugewiesen
 x = float('inf')    # Unendlich 
 x = -float('inf')   # Minus Unendlich
 ```
+
+```
+x = 0b1001   # eine Zahl in binärer Schreibweise zuweisen
+x = 0o17     # eine Zahl in oktaler Schreibweise zuweisen
+x = 0xe2     # eine Zahl in hexadezimaler Schreibeweise zuweisen
+```
  
 
 ## Ausgabe
@@ -65,15 +71,19 @@ x = -float('inf')   # Minus Unendlich
 print(a)                 # einen Wert ausgeben
 print(a, b)              # zwei Werte ausgeben mit Leerzeichen getrennt
 print(a, end=' ')        # nach der Ausgabe keine neue Zeile, sondern ein Leerzeichen 
+print(a, b, sep='-')     # zwischen den Werten kein Leerzeichen, sondern ein '-'.
 ``` 
 
+## f-Strings
 ```
-# Ausgabe mit f-Strings
-a = 42
-print(f'Der Wert von a ist {a}.')
-print(f'{a} zum Quadrat ist {a**2}.')
-x = 3.1415
+x = 40
+print(f'Der Wert von x ist {x}.')
+print(f'{x = }')           # x = 40
+print(f'{x} zum Quadrat ist {x**2}.')
 
+print(f'{a/11=:.2f}')          # a/11=3.64
+print(f'{a} binär = {a:0b}')   # 40 binär = 101000
+print(f'{a} binär = {a:08b}')  # 40 binär = 00101000
 ```
 
 ## Eingabe
@@ -163,6 +173,7 @@ s = 'Habicht'
 for c in s:                         # durch die Zeichen eines Strings laufen
     print(c)
 ```
+
 ```
 # Schleifen mit Listen
 a = [4,2,10,6]
@@ -294,7 +305,7 @@ a.sort(reverse=True)   # absteigend sortieren
 b = a.copy()  # (flache) Kopie der Liste erstellen
 a.clear()     # Liste leeren
 ```
-
+ 
 ```
 help(list)          #  Methoden der Liste
 help(list.insert)   #  Hilfe zur Listenmethode insert
@@ -302,6 +313,7 @@ help(list.insert)   #  Hilfe zur Listenmethode insert
 [W3C](https://www.w3schools.com/python/python_lists.asp)
 
 ## Tuples
+
 Wie Listen, aber nicht veränderbar
 ```
 t = ()              # leeres Tupel
@@ -361,6 +373,19 @@ def zeichen(s, k=3):
     '''
     return s * k
 
+```
+
+Doctest
+```
+def func(x):
+    '''
+    >>> func(5)
+    6
+    '''
+    return x + 1
+
+import doctest
+doctest.run_docstring_examples(func,globals(),optionflags=doctest.NORMALIZE_WHITESPACE) 
 ```
 
 ## Zufall

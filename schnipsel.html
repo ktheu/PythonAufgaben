@@ -389,6 +389,7 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kommentare">Kommentare</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variablen-und-zuweisungen">Variablen und Zuweisungen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ausgabe">Ausgabe</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#f-strings">f-Strings</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eingabe">Eingabe</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bedingungen">Bedingungen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#arithmetische-operatoren">Arithmetische Operatoren</a></li>
@@ -470,20 +471,31 @@ document.write(`
 <span class="n">x</span> <span class="o">=</span> <span class="o">-</span><span class="nb">float</span><span class="p">(</span><span class="s1">&#39;inf&#39;</span><span class="p">)</span>   <span class="c1"># Minus Unendlich</span>
 </pre></div>
 </div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mb">0b1001</span>   <span class="c1"># eine Zahl in binärer Schreibweise zuweisen</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mo">0o17</span>     <span class="c1"># eine Zahl in oktaler Schreibweise zuweisen</span>
+<span class="n">x</span> <span class="o">=</span> <span class="mh">0xe2</span>     <span class="c1"># eine Zahl in hexadezimaler Schreibeweise zuweisen</span>
+</pre></div>
+</div>
 </section>
 <section id="ausgabe">
 <h2>Ausgabe<a class="headerlink" href="#ausgabe" title="Link to this heading">#</a></h2>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span>                 <span class="c1"># einen Wert ausgeben</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>              <span class="c1"># zwei Werte ausgeben mit Leerzeichen getrennt</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s1">&#39; &#39;</span><span class="p">)</span>        <span class="c1"># nach der Ausgabe keine neue Zeile, sondern ein Leerzeichen </span>
+<span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">)</span>     <span class="c1"># zwischen den Werten kein Leerzeichen, sondern ein &#39;-&#39;.</span>
 </pre></div>
 </div>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Ausgabe mit f-Strings</span>
-<span class="n">a</span> <span class="o">=</span> <span class="mi">42</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Der Wert von a ist </span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s1">.&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s1"> zum Quadrat ist </span><span class="si">{</span><span class="n">a</span><span class="o">**</span><span class="mi">2</span><span class="si">}</span><span class="s1">.&#39;</span><span class="p">)</span>
-<span class="n">x</span> <span class="o">=</span> <span class="mf">3.1415</span>
+</section>
+<section id="f-strings">
+<h2>f-Strings<a class="headerlink" href="#f-strings" title="Link to this heading">#</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mi">40</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;Der Wert von x ist </span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s1">.&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">x</span><span class="w"> </span><span class="si">= }</span><span class="s1">&#39;</span><span class="p">)</span>           <span class="c1"># x = 40</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">x</span><span class="si">}</span><span class="s1"> zum Quadrat ist </span><span class="si">{</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="si">}</span><span class="s1">.&#39;</span><span class="p">)</span>
 
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">a</span><span class="o">/</span><span class="mi">11</span><span class="si">=:</span><span class="s1">.2f</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>          <span class="c1"># a/11=3.64</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s1"> binär = </span><span class="si">{</span><span class="n">a</span><span class="si">:</span><span class="s1">0b</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>   <span class="c1"># 40 binär = 101000</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">&#39;</span><span class="si">{</span><span class="n">a</span><span class="si">}</span><span class="s1"> binär = </span><span class="si">{</span><span class="n">a</span><span class="si">:</span><span class="s1">08b</span><span class="si">}</span><span class="s1">&#39;</span><span class="p">)</span>  <span class="c1"># 40 binär = 00101000</span>
 </pre></div>
 </div>
 </section>
@@ -769,6 +781,18 @@ document.write(`
 
 </pre></div>
 </div>
+<p>Doctest</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">func</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    &gt;&gt;&gt; func(5)</span>
+<span class="sd">    6</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="mi">1</span>
+
+<span class="kn">import</span> <span class="nn">doctest</span>
+<span class="n">doctest</span><span class="o">.</span><span class="n">run_docstring_examples</span><span class="p">(</span><span class="n">func</span><span class="p">,</span><span class="nb">globals</span><span class="p">(),</span><span class="n">optionflags</span><span class="o">=</span><span class="n">doctest</span><span class="o">.</span><span class="n">NORMALIZE_WHITESPACE</span><span class="p">)</span> 
+</pre></div>
+</div>
 </section>
 <section id="zufall">
 <h2>Zufall<a class="headerlink" href="#zufall" title="Link to this heading">#</a></h2>
@@ -906,6 +930,7 @@ auf mehrere Zeilen verteilen.</p>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kommentare">Kommentare</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variablen-und-zuweisungen">Variablen und Zuweisungen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ausgabe">Ausgabe</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#f-strings">f-Strings</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eingabe">Eingabe</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bedingungen">Bedingungen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#arithmetische-operatoren">Arithmetische Operatoren</a></li>
