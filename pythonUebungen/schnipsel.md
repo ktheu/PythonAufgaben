@@ -57,6 +57,13 @@ x = None            # es wurde noch kein Wert zugewiesen
 x = float('inf')    # Unendlich 
 x = -float('inf')   # Minus Unendlich
 ```
+
+
+```
+x = 0b1001   # eine Zahl in binärer Schreibweise zuweisen
+x = 0o17     # eine Zahl in oktaler Schreibweise zuweisen
+x = 0xe2     # eine Zahl in hexadezimaler Schreibeweise zuweisen
+```
  
 
 ## Ausgabe
@@ -65,14 +72,19 @@ x = -float('inf')   # Minus Unendlich
 print(a)                 # einen Wert ausgeben
 print(a, b)              # zwei Werte ausgeben mit Leerzeichen getrennt
 print(a, end=' ')        # nach der Ausgabe keine neue Zeile, sondern ein Leerzeichen 
+print(a, b, sep='-')     # zwischen den Werten kein Leerzeichen, sondern ein '-'.
 ``` 
 
-```
-# Ausgabe mit f-Strings
-a = 42
-print(f'Der Wert von a ist {a}.')
-print(f'{a} zum Quadrat ist {a**2}.')
-x = 3.1415
+## f-Strings
+x = 40
+print(f'Der Wert von x ist {x}.')
+print(f'{x = }')           # x = 40
+print(f'{x} zum Quadrat ist {x**2}.')
+
+print(f'{a/11=:.2f}')          # a/11=3.64
+print(f'{a} binär = {a:0b}')   # 40 binär = 101000
+print(f'{a} binär = {a:08b}')  # 40 binär = 00101000
+ 
 
 ```
 
@@ -363,6 +375,19 @@ def zeichen(s, k=3):
 
 ```
 
+Doctest
+```
+def func(x):
+    '''
+    >>> func(5)
+    6
+    '''
+    return x + 1
+
+import doctest
+doctest.run_docstring_examples(func,globals(),optionflags=doctest.NORMALIZE_WHITESPACE) 
+```
+
 ## Zufall
 ```
 import random
@@ -375,6 +400,20 @@ random.seed(x)        # x irgendeine Zahl, setzt den random-seed für reproduzie
 random.choice(a)      # ein zufälliges Element der Liste a
 random.shuffle(a)     # mischt die Elemente der Liste a
 random.sample(a, 2)   # 2 zufällige Elemente aus Liste a
+```
+
+## Das Unendliche
+Das Unendliche nutzen wir, wenn wir eine maximal große oder maximal kleine Zahl benötigen. Es gelten nicht alle Rechengesetze, aber es funktionieren die Vergleiche mit endlichen Zahlen und einige Eigenschaften, die man vom Unendlichen erwarten würde.
+```
+inf = float('inf')   
+x < inf        # True, für jede Zahl x ungleich inf
+-inf < x       # True für jede Zahl x ungleich -inf
+
+# weitere Eigenschaften von inf
+inf + 10000 == inf   # True
+inf - 10000 == inf   # True
+inf + inf == inf     # True
+inf - inf            # nan  = not a number 
 ```
 
 ## Einlesen von Dateien
