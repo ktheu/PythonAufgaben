@@ -58,7 +58,6 @@ x = float('inf')    # Unendlich
 x = -float('inf')   # Minus Unendlich
 ```
 
-
 ```
 x = 0b1001   # eine Zahl in binärer Schreibweise zuweisen
 x = 0o17     # eine Zahl in oktaler Schreibweise zuweisen
@@ -76,6 +75,7 @@ print(a, b, sep='-')     # zwischen den Werten kein Leerzeichen, sondern ein '-'
 ``` 
 
 ## f-Strings
+```
 x = 40
 print(f'Der Wert von x ist {x}.')
 print(f'{x = }')           # x = 40
@@ -84,8 +84,6 @@ print(f'{x} zum Quadrat ist {x**2}.')
 print(f'{a/11=:.2f}')          # a/11=3.64
 print(f'{a} binär = {a:0b}')   # 40 binär = 101000
 print(f'{a} binär = {a:08b}')  # 40 binär = 00101000
- 
-
 ```
 
 ## Eingabe
@@ -175,6 +173,7 @@ s = 'Habicht'
 for c in s:                         # durch die Zeichen eines Strings laufen
     print(c)
 ```
+
 ```
 # Schleifen mit Listen
 a = [4,2,10,6]
@@ -306,7 +305,7 @@ a.sort(reverse=True)   # absteigend sortieren
 b = a.copy()  # (flache) Kopie der Liste erstellen
 a.clear()     # Liste leeren
 ```
-
+ 
 ```
 help(list)          #  Methoden der Liste
 help(list.insert)   #  Hilfe zur Listenmethode insert
@@ -314,6 +313,7 @@ help(list.insert)   #  Hilfe zur Listenmethode insert
 [W3C](https://www.w3schools.com/python/python_lists.asp)
 
 ## Tuples
+
 Wie Listen, aber nicht veränderbar
 ```
 t = ()              # leeres Tupel
