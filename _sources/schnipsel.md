@@ -244,7 +244,8 @@ s.startswith(s1), s.endswith(s1) # beginnnt, endet s mit s1 ?
 s.count(s1)        # Anzahl Vorkommen von s1 in s
 s.index(s1)        # Index erstes Vorkommen s1 in s, Fehler wenn nicht da
 s.find(s1)         # Index erstes Vorkommen s1 in s, -1 wenn nicht da
-s.find(s1,i,j)     # Suche Vorkommen im Intervall [i,j)
+s.find(s1,i,j)     # Index erstes Vorkommen s1 in s im Intervall [i,j)
+s.rfind(s1)        # Index letztes Vorkommen s1 in s, -1 wenn nicht da
 s1 = s.ljust(20)   # s1 beginnt links mit s, hat Länge 20, ggf. Leerzeichen rechts.
 s1 = s.rjust(20)   # analog rechts
 ```
