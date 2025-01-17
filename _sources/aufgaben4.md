@@ -179,6 +179,7 @@ zwischen dem größten und kleinsten Element zurückgibt.
 
 <!-- #1 #func #list #max  -->
 ```
+'''
 Aufgabe 4.11:
 Schreibe eine Funktion func11, der eine Liste a mit Zahlen übergeben wird und eine Zahl k
 und die 'YES' returned, wenn k größer als alle Zahlen in a ist, sonst 'NO'.

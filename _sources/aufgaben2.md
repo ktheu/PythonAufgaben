@@ -356,7 +356,7 @@ die das Dreifache der kleineren Zahl zurückgibt.
 
 ```
 '''
-Aufgabe 4
+Aufgabe 2.20
 Erstelle eine Funktion func4, der eine Liste übergeben wird und die
 True zurückgibt, wenn die Anzahl der Listenelemente gerade ist, sonst False.
 
@@ -373,7 +373,7 @@ True
 
 ```
 '''
-Aufgabe 2.20
+Aufgabe 2.21
 Erstelle eine Funktion func5, der eine nicht-leere Liste mit Zahlen übergeben wird und die 
 die Summe der ersten und letzten Zahl der Liste zurückgibt.
 
